@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tu-espacio-react/static/css/main.d1376fa1.css",
-    "main.js": "/tu-espacio-react/static/js/main.85704459.js",
+    "main.js": "/tu-espacio-react/static/js/main.62891f3c.js",
     "static/css/175.750772ed.chunk.css": "/tu-espacio-react/static/css/175.750772ed.chunk.css",
     "static/js/175.bab19366.chunk.js": "/tu-espacio-react/static/js/175.bab19366.chunk.js",
     "static/css/960.06d26de5.chunk.css": "/tu-espacio-react/static/css/960.06d26de5.chunk.css",
@@ -30,7 +30,7 @@
     "static/media/projects-image7.webp": "/tu-espacio-react/static/media/projects-image7.e4fe7216863ddcb6bfe2.webp",
     "index.html": "/tu-espacio-react/index.html",
     "main.d1376fa1.css.map": "/tu-espacio-react/static/css/main.d1376fa1.css.map",
-    "main.85704459.js.map": "/tu-espacio-react/static/js/main.85704459.js.map",
+    "main.62891f3c.js.map": "/tu-espacio-react/static/js/main.62891f3c.js.map",
     "175.750772ed.chunk.css.map": "/tu-espacio-react/static/css/175.750772ed.chunk.css.map",
     "175.bab19366.chunk.js.map": "/tu-espacio-react/static/js/175.bab19366.chunk.js.map",
     "960.06d26de5.chunk.css.map": "/tu-espacio-react/static/css/960.06d26de5.chunk.css.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.d1376fa1.css",
-    "static/js/main.85704459.js"
+    "static/js/main.62891f3c.js"
   ]
 }
