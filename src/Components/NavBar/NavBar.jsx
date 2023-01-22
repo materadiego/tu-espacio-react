@@ -22,7 +22,7 @@ export default function NavBar() {
       <div className="HeaderContainer">
         <div className="HeaderContainer__MobileSpace"></div>
         <Link
-          to={"/"}
+          to={"/tu-espacio-react"}
           style={{ textDecoration: "inherit" }}
           className="HeaderContainer__Logo"
         >
@@ -52,7 +52,7 @@ export default function NavBar() {
                 <NavLink
                   style={{ textDecoration: "inherit", color: "#ffffff" }}
                   className="MenuOptions"
-                  to={"/"}
+                  to={"/tu-espacio-react"}
                   onClick={toggleMenu}
                 >
                   Home

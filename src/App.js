@@ -18,7 +18,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route
-            path="/"
+            path="/tu-espacio-react"
             element={
               <Suspense>
                 <LazyHomePage />
