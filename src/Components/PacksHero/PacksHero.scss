@@ -1,0 +1,98 @@
+.PacksHero {
+  width: 100%;
+  height: 130vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/projects-image3.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-variacion7;
+  &__Overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 104, 136, 0.75);
+    position: absolute;
+  }
+}
+
+.PacksHeroContainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  &__SocialMedia {
+    display: none;
+  }
+  &__Title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 14vw;
+    letter-spacing: 2vw;
+    color: $color-claro;
+    font-family: $Fuente1;
+  }
+  &__Subtitle {
+    width: 100%;
+    letter-spacing: 0.3vw;
+    background-color: rgba(230, 255, 255, 0.3);
+    text-align: center;
+    font-size: 6vw;
+    font-family: $Fuente1;
+    color: $color-variacion8;
+    border: 0.5vw solid $color-claro;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .PacksHero {
+    height: 31vw;
+    background-image: url(../../assets/packs-hero.webp);
+
+    &__Overlay {
+      display: none;
+    }
+  }
+
+  .PacksHeroContainer {
+    width: 25%;
+    &__SocialMedia {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      width: 2.5vw;
+      top: 11vw;
+      right: 4vw;
+      z-index: 3;
+      border-radius: 100vw;
+      border: 0.1vw solid $color-claro;
+      &--Link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2vw;
+        height: 2vw;
+        margin: 0.8vw 0;
+      }
+    }
+    &__Title {
+      font-size: 4vw;
+      margin-top: 2.5vw;
+      letter-spacing: 0.5vw;
+    }
+    &__Subtitle {
+      letter-spacing: 0.25vw;
+      font-size: 2vw;
+      border: 0.2vw solid $color-claro;
+    }
+  }
+}

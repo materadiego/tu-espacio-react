@@ -1,0 +1,225 @@
+.Contact {
+  &__ImageContainer {
+    width: 95%;
+    overflow: hidden;
+    position: relative;
+    &--Image {
+      width: 100%;
+    }
+    &--Square {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      margin-left: -60%;
+      margin-top: -138%;
+      position: absolute;
+      border: 3vw solid $color-claro;
+    }
+  }
+  &__Content {
+    padding: 20vw 0;
+    margin-top: -12vw;
+    background-color: $color-variacion1;
+    &--Text {
+      width: 80%;
+      letter-spacing: 0.4vw;
+      font-weight: 500;
+      font-size: 6vw;
+      margin: 0 auto;
+      color: $color-variacion6;
+    }
+    &--Title {
+      width: 80%;
+      font-size: 8vw;
+      margin: 0 auto;
+      color: $color-variacion7;
+      font-family: $Fuente1;
+    }
+    &--ContactForm {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1vw auto;
+      & label {
+        width: 100%;
+        margin: 0;
+
+        font-family: $Fuente3;
+        color: $color-claro;
+      }
+    }
+  }
+}
+
+.Contact--Label {
+  width: 100%;
+  margin: 0;
+
+  font-family: $Fuente3;
+  color: $color-claro;
+}
+
+.Contact--Input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: $Fuente2;
+  color: $color-primario;
+  margin-bottom: 12vw;
+  border-bottom: 0.5vw solid $color-claro;
+  &::placeholder {
+    color: $color-claro;
+  }
+}
+
+.Contact--TextArea {
+  width: 100%;
+  height: 30vw;
+  overflow: auto;
+  resize: none;
+  border: none;
+  background-color: transparent;
+  font-family: $Fuente3;
+  color: $color-claro;
+
+  border-bottom: 0.5vw solid $color-claro;
+  &::placeholder {
+    color: $color-claro;
+  }
+}
+
+.Contact--Submit {
+  width: 36vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 10vw 0;
+  color: $color-variacion7;
+  font-family: $Fuente3;
+  background-color: $color-claro;
+  @include buttons;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .Contact {
+    padding-top: 6vw;
+    position: relative;
+    width: 100%;
+    &__ImageContainer {
+      width: 55%;
+      &--Square {
+        border: 1vw solid $color-claro;
+      }
+    }
+    &__Content {
+      width: 50%;
+      padding: 6vw 0 4vw;
+      margin-top: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+
+      &--Text {
+        width: 50%;
+        letter-spacing: 0.1vw;
+        font-size: 0.9vw;
+      }
+      &--Title {
+        margin: 0.5vw auto 1.5vw;
+        width: 50%;
+        letter-spacing: 0.14vw;
+        font-size: 1.7vw;
+      }
+      &--ContactForm {
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 1vw auto;
+      }
+    }
+  }
+
+  .Contact--Label {
+    font-size: 0.9vw;
+
+    &:nth-child(1) {
+      right: 0;
+      width: 44%;
+    }
+
+    &:nth-child(3) {
+      position: absolute;
+      right: 0;
+      width: 44%;
+    }
+    &:nth-child(5) {
+      width: 44%;
+    }
+    &:nth-child(7) {
+      position: absolute;
+      right: 0;
+      top: 4.5vw;
+
+      width: 44%;
+    }
+  }
+
+  .Contact--Input {
+    width: 100%;
+    font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+    border-bottom: 0.15vw solid $color-claro;
+    &:nth-child(1) {
+      width: 44%;
+    }
+    &:nth-child(2) {
+      width: 44%;
+    }
+    &:nth-child(3) {
+      width: 44%;
+    }
+    &:nth-child(4) {
+      width: 44%;
+      position: absolute;
+      right: 0;
+      top: 1.4vw;
+    }
+    &:nth-child(5) {
+      width: 44%;
+    }
+    &:nth-child(6) {
+      width: 44%;
+      position: absolute;
+      right: 0;
+      top: 5.9vw;
+    }
+    &:nth-child(7) {
+      width: 44%;
+    }
+    &:nth-child(8) {
+      width: 44%;
+    }
+  }
+
+  .Contact--TextArea {
+    font-size: 0.9vw;
+
+    width: 100%;
+    height: 4vw;
+    border-bottom: 0.15vw solid $color-claro;
+  }
+
+  .Contact--Submit {
+    width: 8vw;
+    font-size: 1vw;
+    margin: 2vw auto 0;
+  }
+}

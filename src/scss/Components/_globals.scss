@@ -1,0 +1,120 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $Fuente2;
+}
+
+.AngledBoxContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  &__BorderSquare {
+    position: absolute;
+    display: flex;
+    width: 10vw;
+    height: 10vw;
+    border-top: 0.5vw solid $color-secundario;
+    border-left: 0.5vw solid $color-secundario;
+  }
+  &__Title {
+    font-size: 13vw;
+    margin: 5vw 0 0 10vw;
+    letter-spacing: 0.3vw;
+    font-family: $Fuente1;
+  }
+  &__Line {
+    display: flex;
+    margin: 15vw 0 0 8vw;
+    width: 22vw;
+    height: 0;
+    border-bottom: 0.6vw solid;
+  }
+  &__Icon {
+    width: 25vw;
+  }
+  &__Text {
+    margin: 0 0 10vw 10vw;
+    font-size: 4.35vw;
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+    color: $color-secundario;
+
+    & span {
+      display: flex;
+      width: 100%;
+      color: $color-variacion7;
+    }
+  }
+}
+
+.SquareTop {
+  top: 0;
+  left: 0;
+}
+
+.SquareBottom {
+  bottom: 0;
+  right: 0;
+  transform: rotateZ(180deg);
+}
+
+.PagePadding {
+  display: flex;
+  width: 100%;
+  height: 24vw;
+  background-color: $color-variacion7;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .AngledBoxContainer {
+    width: 50%;
+    height: 14vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    &__BorderSquare {
+      width: 3vw;
+      height: 3vw;
+      border-top: 0.15vw solid $color-secundario;
+      border-left: 0.15vw solid $color-secundario;
+    }
+    &__Title {
+      font-size: 3.8vw;
+      margin: 0;
+      font-family: $Fuente1;
+    }
+    &__Line {
+      display: flex;
+      margin: 0 3vw;
+      width: 4.5vw;
+      height: 0;
+      border-bottom: 0.2vw solid;
+    }
+    &__Icon {
+      margin: 0;
+      width: 6vw;
+      position: absolute;
+      margin-top: 1.5vw;
+      top: 0vw;
+    }
+    &__Text {
+      margin: 3vw 0 0;
+      font-size: 1.1vw;
+      letter-spacing: 0.1vw;
+    }
+  }
+
+  .PagePadding {
+    height: 5.5vw;
+  }
+}

@@ -1,0 +1,97 @@
+.HomeYourHouse {
+  padding: 10vw 0;
+}
+
+.HomeYourHouseContainer {
+  &__ImageContainer {
+    position: relative;
+    display: flex;
+    width: 88vw;
+    height: 88vw;
+    margin: 0 auto;
+
+    &--Image {
+      margin-top: 7.5vw;
+      width: 80vw;
+    }
+    &--Square {
+      display: flex;
+      position: absolute;
+      right: 0;
+      width: 83vw;
+      height: 83vw;
+      border: 3vw solid $color-gris;
+    }
+  }
+  &__Content {
+    width: 85%;
+    padding: 35vw 0 10vw;
+    margin: -25vw 0 0 auto;
+    background-color: $color-terciario;
+    &--Title {
+      letter-spacing: 0.3vw;
+      margin: 0 auto;
+      width: 75%;
+      font-size: 8vw;
+      color: #777;
+      line-height: 120%;
+      font-family: $Fuente1;
+    }
+    &--Text {
+      width: 75%;
+      letter-spacing: 0.1vw;
+      font-size: 3.5vw;
+      margin: 4vw auto 0;
+      color: #777;
+      font-family: $Fuente3;
+    }
+  }
+}
+
+.HomeYourHouseContainer__Content--Title:nth-child(3) {
+  color: $color-variacion6;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .HomeYourHouse {
+    padding: 5vw 0;
+  }
+
+  .HomeYourHouseContainer {
+    width: 65%;
+    margin: 0 auto;
+    &__ImageContainer {
+      width: 35vw;
+      height: 35vw;
+      margin: 0;
+
+      &--Image {
+        margin-top: 2vw;
+        width: 33vw;
+      }
+      &--Square {
+        width: 33vw;
+        height: 33vw;
+        border: 0.9vw solid $color-gris;
+      }
+    }
+    &__Content {
+      width: 65%;
+      padding: 6vw 0 9vw;
+      margin: -27.5vw 0 0 auto;
+      &--Title {
+        margin: 0 0 0 40%;
+        width: 45%;
+        font-size: 2vw;
+      }
+      &--Text {
+        width: 45%;
+        font-size: 0.9vw;
+        margin: 3vw 0 0 40%;
+      }
+    }
+  }
+}

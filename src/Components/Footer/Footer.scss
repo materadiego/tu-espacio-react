@@ -1,0 +1,110 @@
+.Footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 12vw;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.FooterContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-claro;
+  z-index: 5;
+}
+
+.FooterMenu {
+  width: 70%;
+  margin: 0 auto;
+  &__List {
+    list-style: none;
+    padding: 0;
+    &--Links {
+      font-size: 7vw;
+      font-weight: 500;
+      margin: 5vw 0;
+      text-decoration: none;
+      font-family: $Fuente3;
+    }
+  }
+}
+
+.FooterMenuOptions {
+  color: $color-variacion7;
+}
+
+.FooterSocialMedia {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7vw auto;
+  &__Links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    height: 12vw;
+    margin: 0 3vw;
+    &--Image {
+      width: 100%;
+    }
+  }
+}
+
+.Footer-Logo {
+  width: 45vw;
+  margin: 15vw auto 10vw;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .Footer {
+    padding: 2vw 0;
+  }
+
+  .FooterContainer {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .FooterMenu {
+    width: 20%;
+
+    margin: 0;
+    &__List {
+      &--Links {
+        font-size: 1.2vw;
+        margin: 0.5vw 0;
+      }
+    }
+  }
+
+  .FooterSocialMedia {
+    width: 12vw;
+
+    margin: 0;
+    &__Links {
+      width: 2vw;
+      height: 2vw;
+      margin: 0 1vw;
+      &--Image {
+        width: 100%;
+      }
+    }
+  }
+
+  .Footer-Logo {
+    width: 12%;
+    position: absolute;
+    margin: 0 44%;
+  }
+}

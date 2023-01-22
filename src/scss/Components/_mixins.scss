@@ -1,0 +1,13 @@
+@mixin buttons {
+  display: flex;
+  align-items: center;
+  padding: 2vw 0;
+  font-size: 5vw;
+  letter-spacing: 0.2vw;
+  border-radius: 100vw;
+  @include media(desktop-s) {
+    font-size: 1.2vw;
+    padding: 0.4vw 0;
+    letter-spacing: 0.1vw;
+  }
+}

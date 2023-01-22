@@ -1,0 +1,214 @@
+.PacksOurPacks {
+  padding: 20vw 0;
+}
+
+.PacksOurPacksContainer {
+  width: 90%;
+
+  margin: 0 auto;
+  &__Box {
+    width: 100%;
+    padding: 10vw 0 5vw;
+    margin-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c7c7c7;
+    &--CheckIcon {
+      width: 18vw;
+      margin: -19vw 0 5vw;
+    }
+    &--Title {
+      width: 85%;
+      line-height: 120%;
+      margin: 0 0 5vw;
+      letter-spacing: 0.25vw;
+      text-align: center;
+      font-size: 7.2vw;
+      font-family: $Fuente1;
+      color: $color-claro;
+    }
+    &--PresentIcon {
+      width: 20vw;
+      margin-bottom: 5vw;
+    }
+    &--Line {
+      display: none;
+    }
+    &--Text {
+      width: 85%;
+      line-height: 120%;
+      letter-spacing: 0.1vw;
+      font-size: 4vw;
+      text-align: center;
+      font-family: $Fuente3;
+      color: $color-claro;
+    }
+  }
+  &__ButtonContainer {
+    margin-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--Link {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55vw;
+      border-radius: 100vw;
+      overflow: hidden;
+      height: 16vw;
+      border: 0.7vw solid;
+      margin: 0 0 1vw;
+      color: $color-secundario;
+      & p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        letter-spacing: 0.8vw;
+        font-size: 6.5vw;
+        font-family: $Fuente1;
+      }
+    }
+    &--Image {
+      width: 15vw;
+    }
+  }
+  &__Recomended {
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--Text {
+      width: 50%;
+
+      margin: 0 0 1vw;
+      letter-spacing: 0.2vw;
+      line-height: 120%;
+      text-align: center;
+      color: $color-variacion7;
+      font-family: $Fuente3;
+      & span {
+        color: $color-variacion8;
+      }
+    }
+    &--Arrow {
+      width: 10vw;
+    }
+  }
+}
+
+.PacksButton1 {
+  color: $color-gris;
+}
+
+.PacksButton2 {
+  color: $color-variacion6;
+}
+
+.PacksButton3 {
+  color: $color-variacion7;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .PacksOurPacks {
+    padding: 5vw 0;
+  }
+
+  .PacksOurPacksContainer {
+    width: 70%;
+    padding-bottom: 8vw;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__Box {
+      position: relative;
+      width: 70%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10vw 0 3vw;
+      margin: 0 auto 7vw;
+      &--CheckIcon {
+        width: 10%;
+        margin: 0 45%;
+        top: -2.2vw;
+        position: absolute;
+      }
+      &--Title {
+        width: 80%;
+        margin: 0 10%;
+        top: 3.5vw;
+        letter-spacing: 0.25vw;
+        font-size: 2vw;
+        position: absolute;
+      }
+      &--PresentIcon {
+        width: 7vw;
+        margin-bottom: 0.5vw;
+      }
+      &--Line {
+        display: flex;
+        height: 6vw;
+        margin: 0 3vw 0 1.5vw;
+        border-left: 0.2vw solid $color-claro;
+      }
+      &--Text {
+        width: 35%;
+        margin: 0;
+        text-align: start;
+        letter-spacing: 0.1vw;
+        font-size: 1.2vw;
+      }
+    }
+    &__ButtonContainer {
+      margin-bottom: 0;
+
+      width: 22.5vw;
+      flex-direction: column-reverse;
+      &--Link {
+        width: 19vw;
+        height: 5.5vw;
+        border: 0.2vw solid;
+        margin: 0 0 1vw;
+        & p {
+          margin: 0;
+          letter-spacing: 0.2vw;
+          font-size: 2vw;
+        }
+      }
+      &--Image {
+        width: 4vw;
+      }
+    }
+    &__Recomended {
+      width: 22.5vw;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 0;
+      flex-direction: column-reverse;
+      &--Text {
+        width: 75%;
+        font-size: 1.8vw;
+        margin: 0 0 1vw;
+        letter-spacing: 0.1vw;
+      }
+      &--Arrow {
+        width: 2.5vw;
+        margin-bottom: 0.5vw;
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}

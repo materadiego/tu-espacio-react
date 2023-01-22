@@ -1,0 +1,197 @@
+.Header {
+  height: 24vw;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+.HeaderContainer {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__MobileSpace {
+    width: 14vw;
+    height: 14vw;
+  }
+  &__Logo {
+    width: 24vw;
+    &--Image {
+      width: 100%;
+    }
+  }
+  &__MenuButton {
+    width: 14vw;
+    height: 14vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &--Line {
+      margin: 0;
+      display: flex;
+      width: 70%;
+      border-radius: 100vw;
+      height: 1.3vw;
+      background-color: $color-claro;
+      border: 1px solid $color-claro;
+    }
+  }
+}
+
+.MenuLine1 {
+  margin-bottom: -3vw;
+}
+.MenuLine2 {
+  margin-top: -3vw;
+}
+
+.MenuContainer {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  min-height: 160vw;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-variacion7;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in;
+}
+
+.MenuClose {
+  position: absolute;
+  right: 12.5%;
+  top: 7.5vw;
+  width: 9vw;
+  height: 9vw;
+  &__Image {
+    width: 100%;
+  }
+}
+
+.Menu-Logo {
+  width: 45vw;
+  margin: 15vw auto 10vw;
+}
+
+.Menu {
+  width: 70%;
+  margin: 0 auto;
+  &__List {
+    list-style: none;
+    padding: 0;
+    &--Links {
+      font-size: 7vw;
+      font-weight: 500;
+      margin: 5vw 0;
+      text-decoration: none;
+      font-family: $Fuente3;
+    }
+  }
+}
+
+.SocialMedia {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7vw auto;
+  &__Links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 20vw;
+    margin: 0 1vw;
+    &--Image {
+      width: 100%;
+    }
+  }
+}
+
+.MenuIsActive {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .Header {
+    height: 5vw;
+  }
+
+  .HeaderContainer {
+    justify-content: flex-start;
+    width: 80%;
+    &__MobileSpace {
+      display: none;
+    }
+    &__Logo {
+      width: 7vw;
+      z-index: 10;
+    }
+    &__MenuButton {
+      display: none;
+    }
+  }
+
+  .MenuContainer {
+    position: relative;
+    width: 40%;
+    height: 4vw;
+    min-height: 4vw;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    z-index: 5;
+    margin: 0 0 0 5%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .MenuClose {
+    display: none;
+  }
+
+  .Menu-Logo {
+    display: none;
+  }
+
+  .Menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &__List {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      &--Links {
+        font-size: 1vw;
+        margin: 0;
+      }
+    }
+  }
+
+  .MenuOptions:hover {
+    color: $color-variacion8;
+  }
+
+  .SocialMedia {
+    display: none;
+  }
+}

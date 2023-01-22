@@ -1,0 +1,38 @@
+.HomeAboutUs {
+  padding: 15vw 0;
+}
+
+.HomeAboutUsTitle {
+  color: $color-variacion7;
+}
+
+.HomeAboutUsText {
+  width: 68vw;
+}
+
+.AngledBoxBlueLine {
+  color: $color-variacion7;
+}
+
+.HomeAboutUsIcon {
+  margin: 4vw 0 2vw 10vw;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .HomeAboutUs {
+    padding: 8vw 0 4vw;
+  }
+
+  .HomeAboutUsText {
+    width: 20vw;
+  }
+
+  .HomeAboutUsIcon {
+    margin: 0;
+    margin-top: 1.5vw;
+    margin-left: 7.2vw;
+  }
+}
