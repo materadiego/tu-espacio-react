@@ -22,10 +22,10 @@ export default function HomeHero() {
             presupuesto.
           </p>
           {/* HERO BUTTON MORE */}
-          <div className="HomeHeroContainer__Content--Button">
+          <a href="#Nosotros" className="HomeHeroContainer__Content--Button">
             <p>Conocé más</p>
             <img src={ArrowDown} alt="Flecha"></img>
-          </div>
+          </a>
         </div>
         <div className="HomeHeroContainer__Bottom">
           <div className="HomeHeroContainer__Bottom--Square"></div>

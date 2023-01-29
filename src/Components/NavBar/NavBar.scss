@@ -187,7 +187,14 @@
     }
   }
 
-  .MenuOptions:hover {
+  .MenuOptions p {
+    margin: 0;
+    transition: 0.3s;
+    will-change: color;
+    color: $color-claro;
+  }
+
+  .MenuOptions p:hover {
     color: $color-variacion8;
   }
 

@@ -1,6 +1,13 @@
 .PacksPacks {
   margin: 0;
   padding: 5vw 0 10vw;
+  position: relative;
+}
+
+.Packs-Id-Container {
+  position: absolute;
+  width: 0vw;
+  top: -4vw;
 }
 
 .Pack1 {

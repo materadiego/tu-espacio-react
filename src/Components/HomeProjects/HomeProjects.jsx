@@ -1,10 +1,11 @@
 import ProjectsIcon from "../../assets/projects-icon.png";
+import scrollFunction from "../../utils/animation-scroll-function";
 
-export default function HomeProjects() {
+export default function HomeProjects(scrollFunction) {
   return (
     <div className="HomeProjects">
       <div className="HomeProjectsContainer">
-        <div className="HomeProjectsContainer__Subcontainer">
+        <div className="HomeProjectsContainer__Subcontainer animate ProjectsOpacity">
           <div className="HomeProjectsContainer__Subcontainer--Title">
             <img src={ProjectsIcon} alt="Icon"></img>
             <p>NUESTROS PROYECTOS</p>
@@ -12,7 +13,7 @@ export default function HomeProjects() {
           <div className="Home-Projects1 ProjectsImage1"></div>
           <div className="Home-Projects1 ProjectsImage2"></div>
         </div>
-        <div className="HomeProjectsContainer__Subcontainer">
+        <div className="HomeProjectsContainer__Subcontainer animate ProjectsOpacity">
           <div className="Mosaic">
             <div className="Home-Projects2 ProjectsImage3"></div>
             <div className="Home-Projects2 ProjectsImage4"></div>

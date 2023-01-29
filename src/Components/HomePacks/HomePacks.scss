@@ -38,10 +38,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
   color: $color-claro;
   background-color: $color-variacion6;
   font-family: $Fuente2;
   @include buttons;
+  &:hover {
+    background-color: $color-variacion2;
+  }
 }
 
 @media screen and (min-width: 768px) {

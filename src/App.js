@@ -10,6 +10,9 @@ const LazyPacksPage = React.lazy(() => import("./Pages/PacksPage"));
 const LazyTeamPage = React.lazy(() => import("./Pages/TeamPage"));
 const LazyProjectsPage = React.lazy(() => import("./Pages/ProjectsPage"));
 const LazyContactPage = React.lazy(() => import("./Pages/ContactPage"));
+const LazyGuideCalendlyPage = React.lazy(() =>
+  import("./Pages/GuideCalendlyPage")
+);
 
 function App() {
   return (
@@ -54,6 +57,14 @@ function App() {
             element={
               <Suspense>
                 <LazyContactPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/Gracias"
+            element={
+              <Suspense>
+                <LazyGuideCalendlyPage />
               </Suspense>
             }
           />

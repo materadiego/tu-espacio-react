@@ -3,7 +3,9 @@ import PackImage from "../../assets/packs-bgpack3.webp";
 
 export default function PacksPack3() {
   return (
-    <div className="PacksPacks Pack3" id="Pack03">
+    <div className="PacksPacks Pack3">
+      <div className="Packs-Id-Container" id="Pack03"></div>
+
       <div className="PacksTitleContainer PacksContainerRight">
         {/* TITLE CONTAINER */}
         <div className="PacksTitleContainer__Subcontainer PacksSubcontainerRight">

@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 import PresentIcon from "../../assets/home-packs.png";
+import scrollFunction from "../../utils/animation-scroll-function";
 
-export default function HomePacks() {
+export default function HomePacks(scrollFunction) {
   return (
     <div className="HomePacks">
-      <div className="AngledBoxContainer HomePacksContainer">
+      <div className="AngledBoxContainer HomePacksContainer animate AnimatedOpacity ">
         <div className="AngledBoxContainer__BorderSquare SquareTop"></div>
         <div className="AngledBoxContainer__BorderSquare SquareBottom"></div>
         <img
@@ -16,7 +18,13 @@ export default function HomePacks() {
         </p>
         <div className="AngledBoxContainer__Line AngledBoxBrownLine"></div>
         <p className="AngledBoxContainer__Title HomePacksTitle">PACKS</p>
-        <button className="HomePacksButton">Ver Opciones +</button>
+        <Link
+          style={{ textDecoration: "inherit", color: "#ffffff" }}
+          to={"/Packs"}
+          className="HomePacksButton"
+        >
+          Ver Opciones +
+        </Link>
       </div>
     </div>
   );

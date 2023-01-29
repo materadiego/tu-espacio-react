@@ -1,9 +1,10 @@
 import HandsIcon from "../../assets/home-aboutus-icon.png";
+import scrollFunction from "../../utils/animation-scroll-function";
 
-export default function HomeAboutUs() {
+export default function HomeAboutUs(scrollFunction) {
   return (
-    <div className="HomeAboutUs">
-      <div className="AngledBoxContainer">
+    <div className="HomeAboutUs" id="Nosotros">
+      <div className="AngledBoxContainer animate AnimatedOpacity">
         <div className="AngledBoxContainer__BorderSquare SquareTop"></div>
         <div className="AngledBoxContainer__BorderSquare SquareBottom"></div>
         <p className="AngledBoxContainer__Title HomeAboutUsTitle">¡HOLA!</p>

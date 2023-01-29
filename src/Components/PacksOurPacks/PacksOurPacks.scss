@@ -61,7 +61,13 @@
       height: 16vw;
       border: 0.7vw solid;
       margin: 0 0 1vw;
+      text-decoration: none;
+      transition: 0.3s;
+      will-change: color background-color border;
       color: $color-secundario;
+      &:hover {
+        text-decoration: none;
+      }
       & p {
         display: flex;
         justify-content: center;
@@ -104,14 +110,29 @@
 
 .PacksButton1 {
   color: $color-gris;
+  &:hover {
+    color: $color-claro;
+    background-color: $color-gris;
+    border: 0.7vw solid $color-gris;
+  }
 }
 
 .PacksButton2 {
   color: $color-variacion6;
+  &:hover {
+    color: $color-claro;
+    background-color: $color-variacion6;
+    border: 0.7vw solid $color-variacion6;
+  }
 }
 
 .PacksButton3 {
   color: $color-variacion7;
+  &:hover {
+    color: $color-claro;
+    background-color: $color-variacion7;
+    border: 0.7vw solid $color-variacion7;
+  }
 }
 
 @media screen and (min-width: 768px) {

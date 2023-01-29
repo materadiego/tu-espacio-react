@@ -1,0 +1,152 @@
+.GuideCalendlyPage {
+  position: relative;
+}
+
+.ThanksContainer {
+  padding-top: 35vw;
+  background-color: $color-variacion3;
+  &__Content {
+    width: 90%;
+    padding: 5vw 0 7vw;
+    position: relative;
+    z-index: 2;
+    margin: 0 5% -14vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-variacion1;
+    &--Icon {
+      width: 15vw;
+    }
+    &--Title {
+      width: 85%;
+      font-size: 7.5vw;
+      letter-spacing: 0.4vw;
+      margin: 3vw 0 0;
+      text-align: center;
+      line-height: 120%;
+      color: $color-claro;
+      font-family: $Fuente1;
+    }
+    &--Text1 {
+      width: 85%;
+      font-size: 4vw;
+      text-align: center;
+      line-height: 120%;
+      margin: 3vw 0 0;
+
+      font-family: $Fuente3;
+      color: $color-variacion7;
+    }
+    &--Text2 {
+      width: 85%;
+      margin: 3vw 0 0;
+
+      text-align: center;
+      font-size: 3.5vw;
+      line-height: 120%;
+
+      color: $color-claro;
+    }
+
+    &--Text3 {
+      width: 85%;
+      margin: 3vw 0 0;
+      line-height: 120%;
+
+      text-align: center;
+      font-size: 6.4vw;
+      font-family: $Fuente1;
+      color: $color-claro;
+    }
+  }
+}
+
+.CalendlyContainer {
+  width: 100%;
+  padding: 27vw 0;
+  height: 150vw;
+  display: flex;
+  background-color: $color-variacion4;
+  &__TitleContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    &--Icon {
+      width: 15vw;
+    }
+    &--Title {
+      width: 95%;
+      letter-spacing: 0.3vw;
+      text-align: center;
+      font-size: 6.5vw;
+      margin: 3vw 0 0;
+      font-family: $Fuente1;
+      color: $color-claro;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .ThanksContainer {
+    padding-top: 10vw;
+    &__Content {
+      width: 40%;
+      padding: 2vw 0 4vw;
+      margin: 0 30% -8vw;
+      &--Icon {
+        width: 3vw;
+      }
+      &--Title {
+        width: 85%;
+        font-size: 3vw;
+        letter-spacing: 0.15vw;
+        margin: 1vw 0 0;
+      }
+      &--Text1 {
+        letter-spacing: 0.05vw;
+
+        width: 85%;
+        font-size: 1.2vw;
+        margin: 1vw 0 0;
+      }
+      &--Text2 {
+        letter-spacing: 0.1vw;
+        width: 65%;
+        margin: 1vw 0 0;
+
+        text-align: center;
+        font-size: 0.9vw;
+      }
+
+      &--Text3 {
+        letter-spacing: 0.1vw;
+        width: 60%;
+        margin: 2vw 0 0;
+        font-size: 1.6vw;
+      }
+    }
+  }
+
+  .CalendlyContainer {
+    padding: 11vw 0;
+    height: 30vw;
+    &__TitleContainer {
+      width: 35%;
+      &--Icon {
+        width: 3vw;
+      }
+      &--Title {
+        width: 100%;
+        letter-spacing: 0.1vw;
+        font-size: 1.5vw;
+        margin: 1vw 0 0;
+      }
+    }
+  }
+}

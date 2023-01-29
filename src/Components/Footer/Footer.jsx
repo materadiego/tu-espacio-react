@@ -19,7 +19,7 @@ export default function Footer() {
               <NavLink
                 style={{ textDecoration: "inherit", color: "#2a7d90" }}
                 className="FooterMenuOptions"
-                to={"/"}
+                to={"/Equipo"}
               >
                 Equipo
               </NavLink>
@@ -28,7 +28,7 @@ export default function Footer() {
               <NavLink
                 style={{ textDecoration: "inherit", color: "#2a7d90" }}
                 className="FooterMenuOptions"
-                to={"/"}
+                to={"/Proyectos"}
               >
                 Proyectos
               </NavLink>
@@ -46,7 +46,7 @@ export default function Footer() {
               <NavLink
                 style={{ textDecoration: "inherit", color: "#2a7d90" }}
                 className="FooterMenuOptions"
-                to={"/"}
+                to={"/Contacto"}
               >
                 Contacto
               </NavLink>

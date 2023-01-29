@@ -4,6 +4,13 @@ html {
 
 body {
   font-family: $Fuente2;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 153vw;
+}
+
+.HomePage {
+  position: relative;
 }
 
 .AngledBoxContainer {
@@ -12,6 +19,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  transition: 2s;
+  will-change: opacity;
   &__BorderSquare {
     position: absolute;
     display: flex;
@@ -69,10 +78,18 @@ body {
   background-color: $color-variacion7;
 }
 
+.AnimatedOpacity {
+  opacity: 0;
+}
+
 @media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1100px) {
+  body {
+    padding-bottom: 14.1vw;
+  }
+
   .AngledBoxContainer {
     width: 50%;
     height: 14vw;

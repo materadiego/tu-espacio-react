@@ -1,0 +1,237 @@
+.PopUp {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  display: flex;
+  opacity: 0;
+  will-change: opacity;
+
+  animation-name: popupappears;
+  animation-duration: 1s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+.PopUpContainer {
+  width: 90%;
+  height: 165vw;
+  position: relative;
+  opacity: 0;
+  will-change: opacity;
+  animation-name: popupappears;
+  animation-duration: 0.5s;
+  animation-delay: 7.5s;
+  animation-fill-mode: forwards;
+  background-color: $color-claro;
+
+  &__Close {
+    position: absolute;
+    right: 3vw;
+    top: 3vw;
+    width: 4.5vw;
+    height: 4.5vw;
+    background-image: url("../../assets/menu-close.png");
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+  &__ImageContainer {
+    width: 100%;
+    height: 41vw;
+    background-image: url("../../assets/popup-bg-mobile.webp");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__Content {
+    width: 90%;
+    margin: -5vw auto 0;
+    background-color: $color-claro;
+    &--Pretitle {
+      padding: 5vw 0 0;
+      margin: 0;
+      font-size: 4.5vw;
+      text-align: center;
+      font-family: $Fuente3;
+      color: $color-secundario;
+    }
+    &--Title {
+      margin: 0 0 4vw;
+      letter-spacing: 0.5vw;
+      font-size: 6.9vw;
+      text-align: center;
+      font-family: $Fuente1;
+      color: $color-variacion7;
+    }
+    &--Text {
+      display: none;
+    }
+  }
+}
+
+.PopUpForm {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  &__Label {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    font-size: 4vw;
+    color: $color-secundario;
+    font-family: $Fuente3;
+  }
+  &__Input {
+    width: 100%;
+    font-size: 4vw;
+    outline: none;
+    border: none;
+    margin-bottom: 5vw;
+    font-family: $Fuente3;
+    border-bottom: 0.6vw solid $color-secundario;
+  }
+  &__Submit {
+    width: 50%;
+    margin: 2vw auto 0;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: $color-claro;
+    background-color: $color-variacion7;
+    font-family: $Fuente3;
+    @include buttons;
+  }
+}
+
+.PopUpInactive {
+  display: none;
+}
+
+@keyframes popupappears {
+  0% {
+    opacity: 0;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1100px) {
+  .PopUpContainer {
+    width: 55%;
+    height: 33.5vw;
+    display: flex;
+    align-items: center;
+    &__Close {
+      right: 0.5vw;
+      top: 0.5vw;
+      width: 2vw;
+      height: 2vw;
+      cursor: pointer;
+      background-image: url("../../assets/popup-close.png");
+    }
+    &__ImageContainer {
+      width: 55%;
+      height: 100%;
+      background-image: url("../../assets/popup-bg-desktop.webp");
+      background-size: 104%;
+    }
+    &__Content {
+      width: 54%;
+      margin: 0;
+      padding-right: 3%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      right: 0;
+      &--Pretitle {
+        padding: 2.5vw 0 0;
+        width: 75%;
+        margin: 0 0 0.5vw;
+
+        font-size: 1vw;
+        text-align: start;
+      }
+      &--Title {
+        width: 75%;
+        margin: 0 0 1vw;
+        line-height: 120%;
+        letter-spacing: 0.15vw;
+        font-size: 1.77vw;
+        text-align: start;
+      }
+      &--Text {
+        width: 75%;
+        display: flex;
+        font-size: 1vw;
+        margin-bottom: 0.5vw;
+        color: $color-secundario;
+        font-family: $Fuente3;
+      }
+    }
+  }
+
+  .PopUpForm {
+    width: 75%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__Label {
+      width: 42%;
+      margin: 0;
+      font-size: 0.9vw;
+      color: $color-secundario;
+      font-family: $Fuente3;
+      &:nth-child(3) {
+        position: absolute;
+        right: 0;
+      }
+      &:nth-child(7) {
+        right: 0;
+        top: 3.7vw;
+        position: absolute;
+      }
+    }
+    &__Input {
+      width: 42%;
+      font-size: 0.9vw;
+      margin-bottom: 0.8vw;
+      border-bottom: 0.15vw solid $color-secundario;
+      &:nth-child(4) {
+        position: absolute;
+        right: 0;
+        top: 1.4vw;
+      }
+      &:nth-child(8) {
+        right: 0;
+        position: absolute;
+        top: 5.1vw;
+      }
+    }
+    &__Submit {
+      width: 50%;
+      margin: 0.5vw auto 1.5vw;
+      cursor: pointer;
+    }
+  }
+
+  .PopUpInactive {
+    display: none;
+  }
+}

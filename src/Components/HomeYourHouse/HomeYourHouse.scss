@@ -67,7 +67,8 @@
       width: 35vw;
       height: 35vw;
       margin: 0;
-
+      transition: 2s;
+      will-change: transform opacity;
       &--Image {
         margin-top: 2vw;
         width: 33vw;
@@ -75,6 +76,8 @@
       &--Square {
         width: 33vw;
         height: 33vw;
+        will-change: transform opacity;
+        transition: 2.5s;
         border: 0.9vw solid $color-gris;
       }
     }
@@ -82,16 +85,40 @@
       width: 65%;
       padding: 6vw 0 9vw;
       margin: -27.5vw 0 0 auto;
+      transition: 2s;
+      will-change: padding margin opacity;
       &--Title {
         margin: 0 0 0 40%;
         width: 45%;
         font-size: 2vw;
+        will-change: opacity;
+        transition: 3s;
       }
       &--Text {
         width: 45%;
         font-size: 0.9vw;
         margin: 3vw 0 0 40%;
+        will-change: opacity;
+        transition: 3s;
       }
     }
+  }
+
+  .AnimatedImageContainer1 {
+    transform: translateX(20vw);
+  }
+
+  .AnimatedSquare1 {
+    transform: translateY(2vw) translateX(-2vw);
+    opacity: 0;
+  }
+
+  .AnimatedContent1 {
+    margin: -27.5vw 0 6vw auto;
+    padding: 0 0 9vw;
+  }
+
+  .AnimatedText {
+    opacity: 0;
   }
 }

@@ -116,10 +116,12 @@
     width: 65%;
 
     padding-bottom: 0;
+
     &__Subcontainer {
       flex-direction: row;
       justify-content: space-between;
-
+      will-change: opacity transform;
+      transition: 1s;
       &--Title {
         margin: 0.5vw 0;
 
@@ -165,5 +167,10 @@
   }
   .ProjectsImage8 {
     display: block;
+  }
+
+  .ProjectsOpacity {
+    opacity: 0.2;
+    transform: translateY(5vw);
   }
 }

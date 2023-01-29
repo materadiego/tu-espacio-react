@@ -22,7 +22,7 @@ export default function NavBar() {
       <div className="HeaderContainer">
         <div className="HeaderContainer__MobileSpace"></div>
         <Link
-          to={"/tu-espacio-react"}
+          to={"/Gracias"}
           style={{ textDecoration: "inherit" }}
           className="HeaderContainer__Logo"
         >
@@ -55,7 +55,7 @@ export default function NavBar() {
                   to={"/tu-espacio-react"}
                   onClick={toggleMenu}
                 >
-                  Home
+                  <p>Home</p>
                 </NavLink>
               </li>
               <li className="Menu__List--Links">
@@ -65,7 +65,7 @@ export default function NavBar() {
                   to={"/Equipo"}
                   onClick={toggleMenu}
                 >
-                  Equipo
+                  <p>Equipo</p>
                 </NavLink>
               </li>
               <li className="Menu__List--Links">
@@ -75,7 +75,7 @@ export default function NavBar() {
                   to={"/Proyectos"}
                   onClick={toggleMenu}
                 >
-                  Proyectos
+                  <p>Proyectos</p>
                 </NavLink>
               </li>
               <li className="Menu__List--Links">
@@ -85,7 +85,7 @@ export default function NavBar() {
                   to={"/Packs"}
                   onClick={toggleMenu}
                 >
-                  Packs
+                  <p>Packs</p>
                 </NavLink>
               </li>
               <li className="Menu__List--Links">
@@ -95,7 +95,7 @@ export default function NavBar() {
                   to={"/Contacto"}
                   onClick={toggleMenu}
                 >
-                  Contacto
+                  <p>Contacto</p>
                 </NavLink>
               </li>
             </ul>
