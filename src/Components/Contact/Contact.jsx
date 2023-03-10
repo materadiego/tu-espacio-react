@@ -22,7 +22,7 @@ export default function Contact() {
   const enviarDatos = (event) => {
     event.preventDefault();
 
-    fetch("https://formsubmit.co/ajax/noguessofia@gmail.com", {
+    fetch("https://formsubmit.co/ajax/info@disenatuespacio.com", {
       method: "post",
       body: new FormData(event.target),
     })
