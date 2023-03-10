@@ -41,7 +41,7 @@ export default function GuideCaledlyContent() {
         <div className="CalendlyContainer__Calendly">
           <InlineWidget
             className="CalendlyContainer__Calendly--CalendlyApp"
-            url="https://calendly.com/tuespaciointeriores?background_color=cdbfbc&text_color=ffffff&primary_color=d2ab8e"
+            url="https://calendly.com/disenatuespacio?primary_color=cdbfbc"
           />
         </div>
       </div>
