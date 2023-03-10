@@ -28,34 +28,47 @@
       color: $color-claro;
       font-family: $Fuente1;
     }
+    &--Download {
+      width: 75%;
+      border-radius: 50vw;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3vw 0;
+      margin: 6vw 0;
+      text-decoration: none;
+
+      background-color: $color-variacion7;
+      & p {
+        margin: 0;
+        letter-spacing: 0.4vw;
+        margin-right: 3vw;
+        font-size: 4.5vw;
+        text-decoration: none;
+
+        font-family: $Fuente3;
+        color: $color-claro;
+      }
+      & div {
+        display: flex;
+        width: 5.5vw;
+        height: 5.5vw;
+        margin: -1vw 0 0;
+        background-image: url(../../assets/download-icon.svg);
+        background-size: 95%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
     &--Text1 {
       width: 85%;
-      font-size: 4vw;
+      font-size: 5vw;
+      letter-spacing: 0.3vw;
       text-align: center;
       line-height: 120%;
-      margin: 3vw 0 0;
+      margin: 0 0;
 
-      font-family: $Fuente3;
-      color: $color-variacion7;
-    }
-    &--Text2 {
-      width: 85%;
-      margin: 3vw 0 0;
-
-      text-align: center;
-      font-size: 3.5vw;
-      line-height: 120%;
-
-      color: $color-claro;
-    }
-
-    &--Text3 {
-      width: 85%;
-      margin: 3vw 0 0;
-      line-height: 120%;
-
-      text-align: center;
-      font-size: 6.4vw;
       font-family: $Fuente1;
       color: $color-claro;
     }
@@ -64,9 +77,9 @@
 
 .CalendlyContainer {
   width: 100%;
-  padding: 27vw 0;
-  height: 150vw;
+  padding: 27vw 0 10vw;
   display: flex;
+  flex-direction: column;
   background-color: $color-variacion4;
   &__TitleContainer {
     display: flex;
@@ -86,6 +99,13 @@
       font-family: $Fuente1;
       color: $color-claro;
     }
+  }
+  &__Calendly {
+    display: flex;
+    margin-top: 8vw;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -108,34 +128,39 @@
         letter-spacing: 0.15vw;
         margin: 1vw 0 0;
       }
+      &--Download {
+        width: 40%;
+
+        padding: 1.2vw 0;
+        margin: 1.5vw 0;
+        will-change: background-color;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: $color-variacion5;
+        }
+        & p {
+          margin: 0;
+          letter-spacing: 0.1vw;
+          margin-right: 0.6vw;
+          font-size: 1vw;
+        }
+        & div {
+          width: 1.4vw;
+          height: 1.4vw;
+          margin: -0.5vw 0 0;
+        }
+      }
       &--Text1 {
-        letter-spacing: 0.05vw;
-
-        width: 85%;
-        font-size: 1.2vw;
-        margin: 1vw 0 0;
-      }
-      &--Text2 {
-        letter-spacing: 0.1vw;
-        width: 65%;
-        margin: 1vw 0 0;
-
-        text-align: center;
-        font-size: 0.9vw;
-      }
-
-      &--Text3 {
         letter-spacing: 0.1vw;
         width: 60%;
-        margin: 2vw 0 0;
         font-size: 1.6vw;
+        margin: 0;
       }
     }
   }
-
   .CalendlyContainer {
-    padding: 11vw 0;
-    height: 30vw;
+    padding: 11vw 0 5vw;
     &__TitleContainer {
       width: 35%;
       &--Icon {
@@ -147,6 +172,9 @@
         font-size: 1.5vw;
         margin: 1vw 0 0;
       }
+    }
+    &__Calendly {
+      margin-top: 2vw;
     }
   }
 }

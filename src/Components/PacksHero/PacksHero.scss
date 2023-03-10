@@ -9,6 +9,12 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0;
+  overflow: hidden;
+  will-change: opacity;
+  animation-name: packsopacity;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   background-color: $color-variacion7;
   &__Overlay {
     width: 100%;
@@ -19,11 +25,18 @@
 }
 
 .PacksHeroContainer {
+  transition: 3s;
+  transform: translateY(22vw);
   position: relative;
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
   width: 70%;
+  animation-name: packsherotitlecontainer;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  will-change: transform;
   justify-content: center;
   &__SocialMedia {
     display: none;
@@ -43,9 +56,33 @@
     background-color: rgba(230, 255, 255, 0.3);
     text-align: center;
     font-size: 6vw;
+    opacity: 0;
+    will-change: opacity;
+    animation-name: packsopacity;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
     font-family: $Fuente1;
     color: $color-variacion8;
     border: 0.5vw solid $color-claro;
+  }
+}
+
+@keyframes packsopacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes packsherotitlecontainer {
+  0% {
+    transform: translateY(22vw);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

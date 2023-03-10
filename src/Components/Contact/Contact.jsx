@@ -5,11 +5,11 @@ import Loader from "../../assets/loader.svg";
 export default function Contact() {
   const [response, setResponse] = useState("");
   const [datos, setDatos] = useState({
-    inp_name: "",
-    inp_surname: "",
-    inp_phone: "",
-    inp_mail: "",
-    inp_mesage: "",
+    Name: "",
+    Surname: "",
+    Phone: "",
+    Mail: "",
+    Message: "",
   });
 
   const handleInputChange = (event) => {
@@ -21,26 +21,33 @@ export default function Contact() {
 
   const enviarDatos = (event) => {
     event.preventDefault();
-    setResponse(
-      <img alt="Loader" className="Loader--Image" src={Loader}></img>
-    );
 
-    fetch("https://formsubmit.co/ajax/diegomatera@gmail.com", {
+    fetch("https://formsubmit.co/ajax/noguessofia@gmail.com", {
       method: "post",
       body: new FormData(event.target),
     })
-      .then((res) => (res.ok ? "" : Promise.reject(res)))
+      .then((res) =>
+        res.ok
+          ? setResponse("¡Mensaje enviado exitosamente!")
+          : Promise.reject(res)
+      )
       .catch(
         (error) => console.log(error),
-        setResponse("Error al enviar el mensaje")
+        setResponse(
+          <img
+            alt="loader"
+            className="ContactResponseContainer__Loader"
+            src={Loader}
+          ></img>
+        )
       )
       .finally(() => {
         setDatos({
-          inp_name: "",
-          inp_surname: "",
-          inp_phone: "",
-          inp_mail: "",
-          inp_mesage: "",
+          Name: "",
+          Surname: "",
+          Phone: "",
+          Mail: "",
+          Message: "",
         });
       });
   };
@@ -61,11 +68,20 @@ export default function Contact() {
           ¡ANIMATE A TENER EL HOGAR DE TUS SUEÑOS
         </p>
         <form className="Contact__Content--ContactForm" onSubmit={enviarDatos}>
+          <input
+            maxLength={2000}
+            type="text"
+            name="Contact-Form"
+            onChange={handleInputChange}
+            value="Mensaje enviado desde formulario de contacto"
+            required
+            className="Contact--Input Contact-Title-Input"
+          ></input>
           <label className="Contact--Label">Nombre</label>
           <input
             maxLength={2000}
             type="text"
-            name="inp_name"
+            name="Name"
             onChange={handleInputChange}
             value={datos.inp_name}
             required
@@ -75,7 +91,7 @@ export default function Contact() {
           <input
             maxLength={2000}
             type="text"
-            name="inp_surname"
+            name="Surname"
             onChange={handleInputChange}
             value={datos.inp_surname}
             required
@@ -84,8 +100,8 @@ export default function Contact() {
           <label className="Contact--Label">Teléfono</label>
           <input
             maxLength={2000}
-            type="text"
-            name="inp_phone"
+            type="tel"
+            name="Phone"
             onChange={handleInputChange}
             value={datos.inp_phone}
             required
@@ -94,8 +110,8 @@ export default function Contact() {
           <label className="Contact--Label">Mail</label>
           <input
             maxLength={2000}
-            type="text"
-            name="inp_mail"
+            type="email"
+            name="Mail"
             onChange={handleInputChange}
             value={datos.inp_mail}
             required
@@ -105,7 +121,7 @@ export default function Contact() {
           <textarea
             className="Contact--TextArea"
             type="text"
-            name="inp_message"
+            name="Message"
             onChange={handleInputChange}
             value={datos.inp_message}
             required

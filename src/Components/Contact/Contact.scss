@@ -40,7 +40,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 1vw auto;
+      margin: 5vw auto;
       & label {
         width: 100%;
         margin: 0;
@@ -108,9 +108,16 @@
   justify-content: center;
   width: 100%;
   height: 20vw;
-  font-size: 4vw;
+  font-size: 5vw;
   color: $color-claro;
   font-family: $Fuente3;
+  &__Loader {
+    width: 20vw;
+  }
+}
+
+.Contact-Title-Input {
+  display: none;
 }
 
 .Loader--Image {
@@ -170,15 +177,15 @@
       width: 44%;
     }
 
-    &:nth-child(3) {
+    &:nth-child(4) {
       position: absolute;
       right: 0;
       width: 44%;
     }
-    &:nth-child(5) {
+    &:nth-child(8) {
       width: 44%;
     }
-    &:nth-child(7) {
+    &:nth-child(6) {
       position: absolute;
       right: 0;
       top: 4.5vw;
@@ -201,7 +208,7 @@
     &:nth-child(3) {
       width: 44%;
     }
-    &:nth-child(4) {
+    &:nth-child(5) {
       width: 44%;
       position: absolute;
       right: 0;
@@ -210,16 +217,16 @@
     &:nth-child(5) {
       width: 44%;
     }
-    &:nth-child(6) {
+    &:nth-child(7) {
       width: 44%;
       position: absolute;
       right: 0;
       top: 5.9vw;
     }
-    &:nth-child(7) {
+    &:nth-child(8) {
       width: 44%;
     }
-    &:nth-child(8) {
+    &:nth-child(9) {
       width: 44%;
     }
   }
@@ -242,6 +249,9 @@
     width: 100%;
     height: 4vw;
     font-size: 1vw;
+    &__Loader {
+      width: 4vw;
+    }
   }
 
   .Loader--Image {

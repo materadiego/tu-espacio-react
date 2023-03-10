@@ -14,7 +14,7 @@
     &--Title {
       margin: 0 0 6vw;
       transition: 2s;
-      opacity: 0;
+      opacity: 1;
 
       will-change: opacity;
       animation-name: opacityanimation;
@@ -26,7 +26,7 @@
       font-size: 5vw;
       line-height: 130%;
       margin: 0 0 6vw;
-      opacity: 0;
+      opacity: 1;
 
       will-change: opacity;
       animation-name: opacityanimation;
@@ -39,7 +39,7 @@
       width: 48vw;
       text-decoration: none;
       transition: 0.3s;
-      opacity: 0;
+      opacity: 1;
       will-change: background-color opacity;
       animation-name: opacityanimation;
       animation-duration: 0.1s;
@@ -144,16 +144,20 @@
       &--Title {
         margin: 0 0 2vw 10vw;
         width: 29vw;
+        opacity: 0;
       }
       &--Description {
         letter-spacing: 0.1vw;
         font-size: 1.075vw;
         margin: 0 0 4vw 10vw;
         width: 28vw;
+        opacity: 0;
       }
       &--Button {
         width: 12vw;
         margin-left: 10vw;
+        opacity: 0;
+
         & p {
           margin: 0 0.5vw 0 1vw;
         }

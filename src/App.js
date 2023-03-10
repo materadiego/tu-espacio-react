@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
+import PopUp from "./Components/PopUp/PopUp";
 
 import "./scss/Styles.scss";
 
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar />
+        <PopUp />
         <Routes>
           <Route
             path="/tu-espacio-react"

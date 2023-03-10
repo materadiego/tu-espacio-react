@@ -1,3 +1,5 @@
+import React from "react";
+import { InlineWidget } from "react-calendly";
 import ThanksIcon from "../../assets/gracias.png";
 import CalendarIcon from "../../assets/calendar.png";
 
@@ -12,14 +14,15 @@ export default function GuideCaledlyContent() {
             className="ThanksContainer__Content--Icon"
           ></img>
           <p className="ThanksContainer__Content--Title">¡MUCHAS GRACIAS!</p>
+          <a
+            href="Ebook-Tu-espacio.pdf"
+            download="Ebook-Tu-espacio.pdf"
+            className="ThanksContainer__Content--Download"
+            style={{ textDecoration: "inherit" }}
+          >
+            <p> Descargar Ebook </p> <div></div>{" "}
+          </a>
           <p className="ThanksContainer__Content--Text1">
-            En pocos minutos recibirás por correo nuestra Guía.
-          </p>
-          <p className="ThanksContainer__Content--Text2">
-            Si no la encontrás, no olvides revisar la casilla de promociones y
-            spam.
-          </p>
-          <p className="ThanksContainer__Content--Text3">
             El espacio de tus sueños está cada vez más cerca.
           </p>
         </div>
@@ -34,6 +37,12 @@ export default function GuideCaledlyContent() {
           <p className="CalendlyContainer__TitleContainer--Title">
             ¡Agendá tu asesoria gratuita de 20 minutos!
           </p>
+        </div>
+        <div className="CalendlyContainer__Calendly">
+          <InlineWidget
+            className="CalendlyContainer__Calendly--CalendlyApp"
+            url="https://calendly.com/tuespaciointeriores?background_color=cdbfbc&text_color=ffffff&primary_color=d2ab8e"
+          />
         </div>
       </div>
     </div>

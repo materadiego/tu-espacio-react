@@ -50,6 +50,7 @@ export default function NavBar() {
             <ul className="Menu__List">
               <li className="Menu__List--Links">
                 <NavLink
+                  end
                   style={{ textDecoration: "inherit", color: "#ffffff" }}
                   className="MenuOptions"
                   to={"/tu-espacio-react"}
