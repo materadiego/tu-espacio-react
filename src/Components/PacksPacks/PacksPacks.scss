@@ -33,12 +33,16 @@
     align-items: center;
     &--Image {
       width: 22vw;
+      will-change: opacity;
+      transition: 0.5s;
     }
     &--Pack {
       margin: 0;
       font-size: 7vw;
       letter-spacing: 1.5vw;
       font-weight: 600;
+      will-change: opacity;
+      transition: 0.5s;
       font-family: $Fuente1;
       color: $color-claro;
     }
@@ -50,6 +54,8 @@
     letter-spacing: 0.5vw;
     font-size: 9vw;
     text-align: center;
+    will-change: opacity;
+    transition: 0.5s;
     font-family: $Fuente1;
   }
   &__Image {
@@ -65,7 +71,8 @@
     margin: 0;
     line-height: 120%;
     font-size: 4.3vw;
-
+    will-change: opacity;
+    transition: 0.5s;
     color: $color-claro;
     font-family: $Fuente3;
   }
@@ -94,6 +101,8 @@
 .PacksDescriptions {
   width: 80%;
   margin: 0 auto;
+  will-change: opacity;
+  transition: 0.5s;
   &__Text {
     padding-left: 7vw;
     margin: 0 0 2vw;
@@ -200,12 +209,16 @@
       align-items: center;
       &--Image {
         width: 6.5vw;
+        transition: 0.5s;
+        will-change: opacity;
       }
       &--Pack {
         margin: 0;
         font-size: 3vw;
         letter-spacing: 0.4vw;
         line-height: 110%;
+        transition: 0.5s;
+        will-change: opacity;
       }
     }
     &__Title {
@@ -214,12 +227,15 @@
       letter-spacing: 0.3vw;
       font-size: 4vw;
       text-align: start;
+      transition: 0.5s;
+      will-change: opacity;
     }
     &__Image {
       width: 47%;
       margin-top: 0;
       margin-bottom: 0;
       position: absolute;
+      z-index: 5;
     }
     &__Line {
       display: flex;
@@ -232,6 +248,8 @@
       margin: 0;
       font-size: 1.43vw;
       line-height: 110%;
+      transition: 0.5s;
+      will-change: opacity;
     }
     &__Recomended {
       width: 18%;
@@ -240,6 +258,9 @@
       margin: 0 auto 1vw;
       position: absolute;
       top: 8.5vw;
+      opacity: 1;
+      will-change: opacity;
+      transition: 1s cubic-bezier(0.99, 1, 0.56, 0.99);
     }
   }
 
@@ -282,13 +303,16 @@
   }
 
   .PacksDescriptions {
-    width: 40%;
+    width: 30%;
     margin: 0 auto;
+    opacity: 1;
+    will-change: opacity;
+    transition: 0.5s;
     &__Text {
       padding-left: 2vw;
       margin: 0 0 0.5vw;
       line-height: 120%;
-      font-size: 1.5vw;
+      font-size: 1.3vw;
       background-size: 1.5vw;
       background-position: top left;
       background-repeat: no-repeat;
@@ -306,5 +330,13 @@
 
   .PacksMobile {
     display: none;
+  }
+
+  .AnimatedOpacity {
+    opacity: 0;
+  }
+
+  .RecomendedPack {
+    transform: translateX(42vw);
   }
 }

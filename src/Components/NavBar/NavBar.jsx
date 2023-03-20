@@ -22,7 +22,7 @@ export default function NavBar() {
       <div className="HeaderContainer">
         <div className="HeaderContainer__MobileSpace"></div>
         <Link
-          to={"/Gracias"}
+          to={"/tu-espacio-react"}
           style={{ textDecoration: "inherit" }}
           className="HeaderContainer__Logo"
         >
@@ -51,7 +51,7 @@ export default function NavBar() {
               <li className="Menu__List--Links">
                 <NavLink
                   end
-                  style={{ textDecoration: "inherit", color: "#ffffff" }}
+                  style={{ textDecoration: "inherit" }}
                   className="MenuOptions"
                   to={"/tu-espacio-react"}
                   onClick={toggleMenu}
@@ -61,7 +61,7 @@ export default function NavBar() {
               </li>
               <li className="Menu__List--Links">
                 <NavLink
-                  style={{ textDecoration: "inherit", color: "#ffffff" }}
+                  style={{ textDecoration: "inherit" }}
                   className="MenuOptions"
                   to={"/Equipo"}
                   onClick={toggleMenu}
@@ -71,7 +71,7 @@ export default function NavBar() {
               </li>
               <li className="Menu__List--Links">
                 <NavLink
-                  style={{ textDecoration: "inherit", color: "#ffffff" }}
+                  style={{ textDecoration: "inherit" }}
                   className="MenuOptions"
                   to={"/Proyectos"}
                   onClick={toggleMenu}
@@ -81,7 +81,7 @@ export default function NavBar() {
               </li>
               <li className="Menu__List--Links">
                 <NavLink
-                  style={{ textDecoration: "inherit", color: "#ffffff" }}
+                  style={{ textDecoration: "inherit" }}
                   className="MenuOptions"
                   to={"/Packs"}
                   onClick={toggleMenu}
@@ -91,7 +91,7 @@ export default function NavBar() {
               </li>
               <li className="Menu__List--Links">
                 <NavLink
-                  style={{ textDecoration: "inherit", color: "#ffffff" }}
+                  style={{ textDecoration: "inherit" }}
                   className="MenuOptions"
                   to={"/Contacto"}
                   onClick={toggleMenu}

@@ -4,28 +4,29 @@ import CheckPack1 from "../../assets/packs-checkpack1.png";
 import CheckPack2 from "../../assets/packs-checkpack2.png";
 import CheckPack3 from "../../assets/packs-checkpack3.png";
 import PacksArrowDown from "../../assets/arrow-down-g.png";
+import scrollFunction from "../../utils/animation-scroll-function";
 
-export default function PacksOurPacks() {
+export default function PacksOurPacks(scrollFunction) {
   return (
     <div className="PacksOurPacks">
       <div className="PacksOurPacksContainer">
         {/* GREY BOX */}
-        <div className="PacksOurPacksContainer__Box">
+        <div className="PacksOurPacksContainer__Box animate PacksBox">
           <img
             src={BoxCheck}
             alt="Check-Icon"
             className="PacksOurPacksContainer__Box--CheckIcon"
           ></img>
-          <p className="PacksOurPacksContainer__Box--Title">
+          <p className="PacksOurPacksContainer__Box--Title animate AnimatedOpacity">
             JUNTOS PODEMOS CREAR EL ESPACIO QUE SIEMPRE QUISISTE
           </p>
           <img
             src={BoxPresent}
             alt="Present-Icon"
-            className="PacksOurPacksContainer__Box--PresentIcon"
+            className="PacksOurPacksContainer__Box--PresentIcon animate AnimatedOpacity"
           ></img>
-          <div className="PacksOurPacksContainer__Box--Line"></div>
-          <p className="PacksOurPacksContainer__Box--Text">
+          <div className="PacksOurPacksContainer__Box--Line animate AnimatedOpacity"></div>
+          <p className="PacksOurPacksContainer__Box--Text animate AnimatedOpacity">
             Ofrecemos distintos packs para que elijas el que mejor se adapte a
             lo que estás buscando.
           </p>
@@ -59,7 +60,7 @@ export default function PacksOurPacks() {
           ></img>
         </div>
         {/* RECOMENDED TEXT */}
-        <div className="PacksOurPacksContainer__Recomended">
+        <div className="PacksOurPacksContainer__Recomended animate AnimatedOpacity">
           <p className="PacksOurPacksContainer__Recomended--Text">
             ¡Nuestro pack
             <span> recomendado!</span>

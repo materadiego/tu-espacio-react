@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import BlueLogo from "../../assets/logo-blue.png";
 import Wsp from "../../assets/redes-wsp-blue.png";
 import Ig from "../../assets/redes-ig-blue.png";

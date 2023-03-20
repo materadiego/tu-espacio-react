@@ -4,7 +4,6 @@
 
 .PacksOurPacksContainer {
   width: 90%;
-
   margin: 0 auto;
   &__Box {
     width: 100%;
@@ -25,15 +24,21 @@
       letter-spacing: 0.25vw;
       text-align: center;
       font-size: 7.2vw;
+      transition: 0.5s;
+      will-change: opacity;
       font-family: $Fuente1;
       color: $color-claro;
     }
     &--PresentIcon {
       width: 20vw;
       margin-bottom: 5vw;
+      transition: 0.5s;
+      will-change: opacity;
     }
     &--Line {
       display: none;
+      transition: 0.5s;
+      will-change: opacity;
     }
     &--Text {
       width: 85%;
@@ -41,6 +46,8 @@
       letter-spacing: 0.1vw;
       font-size: 4vw;
       text-align: center;
+      transition: 0.5s;
+      will-change: opacity;
       font-family: $Fuente3;
       color: $color-claro;
     }
@@ -89,6 +96,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.5s;
+    will-change: opacity;
     &--Text {
       width: 50%;
 
@@ -152,6 +161,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
     &__Box {
       position: relative;
       width: 70%;
@@ -160,6 +170,8 @@
       justify-content: center;
       padding: 10vw 0 3vw;
       margin: 0 auto 7vw;
+      will-change: transform background-color;
+      transition: 0.3s;
       &--CheckIcon {
         width: 10%;
         margin: 0 45%;
@@ -173,15 +185,24 @@
         letter-spacing: 0.25vw;
         font-size: 2vw;
         position: absolute;
+        opacity: 1;
+        will-change: opacity;
+        transition: 0.5s;
       }
       &--PresentIcon {
         width: 7vw;
         margin-bottom: 0.5vw;
+        opacity: 1;
+        will-change: opacity;
+        transition: 0.5s;
       }
       &--Line {
         display: flex;
         height: 6vw;
         margin: 0 3vw 0 1.5vw;
+        opacity: 1;
+        will-change: opacity;
+        transition: 0.8s;
         border-left: 0.2vw solid $color-claro;
       }
       &--Text {
@@ -190,6 +211,9 @@
         text-align: start;
         letter-spacing: 0.1vw;
         font-size: 1.2vw;
+        opacity: 1;
+        will-change: opacity;
+        transition: 1s;
       }
     }
     &__ButtonContainer {
@@ -219,6 +243,9 @@
       bottom: 0;
       margin-bottom: 0;
       flex-direction: column-reverse;
+      opacity: 1;
+      will-change: opacity;
+      transition: 0.5s;
       &--Text {
         width: 75%;
         font-size: 1.8vw;
@@ -231,5 +258,12 @@
         transform: rotateX(180deg);
       }
     }
+  }
+  .AnimatedOpacity {
+    opacity: 0;
+  }
+  .PacksBox {
+    transform: translateY(7vw);
+    background-color: transparent;
   }
 }

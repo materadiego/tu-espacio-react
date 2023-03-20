@@ -10,13 +10,15 @@ export default function PacksPack3() {
         {/* TITLE CONTAINER */}
         <div className="PacksTitleContainer__Subcontainer PacksSubcontainerRight">
           <img
-            className="PacksTitleContainer__Subcontainer--Image"
+            className="PacksTitleContainer__Subcontainer--Image animate AnimatedOpacity"
             src={RadialCheck3}
             alt="First-Pack"
           ></img>
-          <p className="PacksTitleContainer__Subcontainer--Pack">PACK 03</p>
+          <p className="PacksTitleContainer__Subcontainer--Pack animate AnimatedOpacity">
+            PACK 03
+          </p>
         </div>
-        <p className="PacksTitleContainer__Title PackTitle3 Color-Blue">
+        <p className="PacksTitleContainer__Title PackTitle3 Color-Blue  animate AnimatedOpacity">
           PROYECTO A MEDIDA
         </p>
         <img
@@ -26,8 +28,10 @@ export default function PacksPack3() {
         ></img>
         <div className="PacksTitleContainer__Line"></div>
 
-        <p className="PacksTitleContainer__Recomended">¡Recomendado!</p>
-        <p className="PacksTitleContainer__Text PacksTextLeft PacksText3">
+        <p className="PacksTitleContainer__Recomended  animate RecomendedPack">
+          ¡Recomendado!
+        </p>
+        <p className="PacksTitleContainer__Text PacksTextLeft PacksText3  animate AnimatedOpacity">
           Por medio de videollamadas <br className="PacksMobile"></br>{" "}
           co-creamos tu proyecto a medida para que lo ejecutes vos mismo.
           <span className="Color-Blue">
@@ -38,7 +42,7 @@ export default function PacksPack3() {
       </div>
       {/* INCLUDED */}
       <p className="PacksIncludes Bg-Blue">¿QUÉ INCLUYE?</p>
-      <div className="PacksDescriptions">
+      <div className="PacksDescriptions  animate AnimatedOpacity">
         <p className="PacksDescriptions__Text  PackDescriptions--Check3">
           Plano de distribución.
         </p>

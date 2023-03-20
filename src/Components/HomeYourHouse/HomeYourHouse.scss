@@ -3,13 +3,15 @@
 }
 
 .HomeYourHouseContainer {
+  overflow: hidden;
   &__ImageContainer {
     position: relative;
     display: flex;
     width: 88vw;
     height: 88vw;
     margin: 0 auto;
-
+    transition: 1s;
+    will-change: transform opacity;
     &--Image {
       margin-top: 7.5vw;
       width: 80vw;
@@ -20,6 +22,8 @@
       right: 0;
       width: 83vw;
       height: 83vw;
+      will-change: transform opacity;
+      transition: 2s;
       border: 3vw solid $color-gris;
     }
   }
@@ -27,6 +31,7 @@
     width: 85%;
     padding: 35vw 0 10vw;
     margin: -25vw 0 0 auto;
+    transition: 2s;
     background-color: $color-terciario;
     &--Title {
       letter-spacing: 0.3vw;
@@ -35,6 +40,8 @@
       font-size: 8vw;
       color: #777;
       line-height: 120%;
+      will-change: opacity;
+      transition: 3s;
       font-family: $Fuente1;
     }
     &--Text {
@@ -43,9 +50,24 @@
       font-size: 3.5vw;
       margin: 4vw auto 0;
       color: #777;
+      will-change: opacity;
+      transition: 3s;
       font-family: $Fuente3;
     }
   }
+}
+
+.AnimatedImageContainer1 {
+  transform: translateX(20vw);
+}
+
+.AnimatedSquare1 {
+  transform: translateY(10vw) translateX(-10vw);
+  opacity: 0;
+}
+
+.AnimatedText {
+  opacity: 0.2;
 }
 
 .HomeYourHouseContainer__Content--Title:nth-child(3) {

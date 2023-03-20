@@ -13,7 +13,9 @@ const scrollFunction = window.addEventListener("scroll", function () {
         "AnimatedSquare1",
         "AnimatedContent1",
         "AnimatedText",
-        "ProjectsOpacity"
+        "ProjectsOpacity",
+        "PacksBox",
+        "RecomendedPack"
       );
     }
   }

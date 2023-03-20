@@ -1,7 +1,8 @@
 import RadialCheck2 from "../../assets/packs-radial2.png";
 import PackImage from "../../assets/packs-bgpack2.webp";
+import scrollFunction from "../../utils/animation-scroll-function";
 
-export default function PacksPack2() {
+export default function PacksPack2(scrollFunction) {
   return (
     <div className="PacksPacks Pack2">
       <div className="Packs-Id-Container" id="Pack02"></div>
@@ -10,13 +11,15 @@ export default function PacksPack2() {
         {/* TITLE CONTAINER */}
         <div className="PacksTitleContainer__Subcontainer PacksSubcontainerLeft">
           <img
-            className="PacksTitleContainer__Subcontainer--Image"
+            className="PacksTitleContainer__Subcontainer--Image  animate AnimatedOpacity"
             src={RadialCheck2}
             alt="First-Pack"
           ></img>
-          <p className="PacksTitleContainer__Subcontainer--Pack">PACK 02</p>
+          <p className="PacksTitleContainer__Subcontainer--Pack  animate AnimatedOpacity">
+            PACK 02
+          </p>
         </div>
-        <p className="PacksTitleContainer__Title PacksTitleRight Color-Brown">
+        <p className="PacksTitleContainer__Title PacksTitleRight Color-Brown  animate AnimatedOpacity">
           ASESORÍA
         </p>
         <img
@@ -26,7 +29,7 @@ export default function PacksPack2() {
         ></img>
         <div className="PacksTitleContainer__Line"></div>
 
-        <p className="PacksTitleContainer__Text PacksTextRight">
+        <p className="PacksTitleContainer__Text PacksTextRight  animate AnimatedOpacity">
           Por medio de 2 videollamadas co-creamos tu{" "}
           <span className="Color-Brown "> proyecto a medida</span> para que lo
           ejecutes vos mismo sin gastar tiempo ni dinero extra.
@@ -34,7 +37,7 @@ export default function PacksPack2() {
       </div>
       {/* INCLUDED */}
       <p className="PacksIncludes Bg-Brown">¿QUÉ INCLUYE?</p>
-      <div className="PacksDescriptions">
+      <div className="PacksDescriptions  animate AnimatedOpacity">
         <p className="PacksDescriptions__Text PackDescriptions--Check2">
           Plano de distribución.
         </p>

@@ -24,6 +24,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    will-change: opacity;
+    transition: 1s;
     &--Title {
       width: 100%;
       display: flex;
@@ -101,6 +103,10 @@
   background-image: url(../../assets/projects-image8.webp);
 }
 
+.ProjectsOpacity {
+  opacity: 0.2;
+}
+
 @media screen and (min-width: 768px) {
 }
 
@@ -114,9 +120,7 @@
 
   .HomeProjectsContainer {
     width: 65%;
-
     padding-bottom: 0;
-
     &__Subcontainer {
       flex-direction: row;
       justify-content: space-between;
@@ -124,7 +128,6 @@
       transition: 1s;
       &--Title {
         margin: 0.5vw 0;
-
         width: 24vw;
         padding: 1vw 0;
         & img {
@@ -149,7 +152,7 @@
     margin: 0.5vw 0;
     height: 24vw;
     transition: 0.3s;
-    will-change: background-size;
+    will-change: background-size opacity;
     &:hover {
       background-size: 110%;
     }
