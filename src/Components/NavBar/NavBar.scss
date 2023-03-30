@@ -15,9 +15,11 @@
   &__MobileSpace {
     width: 14vw;
     height: 14vw;
+    display: flex;
   }
   &__Logo {
-    width: 24vw;
+    width: 30vw;
+    padding-top: 3vw;
     &--Image {
       width: 100%;
     }
@@ -29,27 +31,46 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 6;
     &--Line {
       margin: 0;
+      position: absolute;
       display: flex;
       width: 70%;
       border-radius: 100vw;
-      height: 1.3vw;
+      height: 1vw;
+      will-change: margin transform;
+      transition: 0.3s;
       background-color: $color-claro;
       border: 1px solid $color-claro;
     }
   }
 }
 
+.MenuButtonFixed {
+  position: fixed;
+  right: 10%;
+}
+
 .MenuLine1 {
   margin-bottom: -3vw;
+
+  &__Active {
+    transform: rotateZ(-225deg);
+    margin: 0;
+  }
 }
 .MenuLine2 {
   margin-top: -3vw;
+  &__Active {
+    transform: rotateZ(225deg);
+    margin: 0;
+  }
 }
 
 .MenuContainer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   min-height: 160vw;
@@ -65,20 +86,9 @@
   background-color: $color-variacion7;
 }
 
-.MenuClose {
-  position: absolute;
-  right: 12.5%;
-  top: 7.5vw;
-  width: 9vw;
-  height: 9vw;
-  &__Image {
-    width: 100%;
-  }
-}
-
 .Menu-Logo {
   width: 45vw;
-  margin: 15vw auto 10vw;
+  margin: 10vw auto 5vw;
 }
 
 .Menu {
@@ -90,11 +100,19 @@
     &--Links {
       font-size: 7vw;
       font-weight: 500;
-      margin: 5vw 0;
+      margin: 3vw 0;
       text-decoration: none;
       font-family: $Fuente3;
     }
   }
+}
+
+.MenuOptions {
+  color: $color-claro;
+}
+
+.MenuOptions.active {
+  color: $color-variacion8;
 }
 
 .SocialMedia {
@@ -102,18 +120,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 7vw auto;
+  margin: 6vw auto 0;
   &__Links {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vw;
-    height: 20vw;
-    margin: 0 1vw;
+    width: 9vw;
+    height: 9vw;
+    margin: 0 5vw;
     &--Image {
       width: 100%;
     }
   }
+}
+
+.SocialMedia__Links--Image.fb {
+  width: 8vw;
+  height: 8vw;
 }
 
 .MenuIsActive {
@@ -126,7 +149,8 @@
 
 @media screen and (min-width: 1100px) {
   .Header {
-    height: 5vw;
+    height: 6vw;
+    padding-top: 1vw;
   }
 
   .HeaderContainer {
@@ -159,10 +183,6 @@
     left: 0;
     opacity: 1;
     pointer-events: all;
-  }
-
-  .MenuClose {
-    display: none;
   }
 
   .Menu-Logo {

@@ -7,14 +7,19 @@
   &__ImageContainer {
     position: relative;
     display: flex;
-    width: 88vw;
-    height: 88vw;
+    width: 86vw;
+    height: 86vw;
     margin: 0 auto;
     transition: 1s;
     will-change: transform opacity;
     &--Image {
       margin-top: 7.5vw;
       width: 80vw;
+      overflow: hidden;
+      background-image: url(../../assets/home-yourhouse.webp);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     &--Square {
       display: flex;
@@ -91,13 +96,19 @@
       margin: 0;
       transition: 2s;
       will-change: transform opacity;
+      &:hover .HomeYourHouseContainer__ImageContainer--Image {
+        background-size: 105%;
+      }
       &--Image {
         margin-top: 2vw;
         width: 33vw;
+        height: 29.8vw;
+        transition: 0.5s;
+        will-change: background-size;
       }
       &--Square {
-        width: 33vw;
-        height: 33vw;
+        width: 33.5vw;
+        height: 29.8vw;
         will-change: transform opacity;
         transition: 2.5s;
         border: 0.9vw solid $color-gris;
@@ -118,10 +129,12 @@
       }
       &--Text {
         width: 45%;
-        font-size: 0.9vw;
+        font-size: 1.15vw;
         margin: 3vw 0 0 40%;
         will-change: opacity;
         transition: 3s;
+        line-height: 130%;
+        letter-spacing: 0;
       }
     }
   }

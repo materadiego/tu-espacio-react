@@ -9,10 +9,10 @@
   overflow: hidden;
   &__Content {
     width: 80%;
-    padding: 5vw 0 26vw;
+    padding: 5vw 0 22vw;
     margin: 0 auto;
     &--Title {
-      margin: 0 0 6vw;
+      margin: 0 auto 4vw;
       transition: 2s;
       opacity: 0;
       will-change: opacity;
@@ -20,11 +20,13 @@
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
       animation-delay: 1.5s;
+      width: 88%;
     }
     &--Description {
-      font-size: 5vw;
+      width: 88%;
+      font-size: 4.5vw;
       line-height: 130%;
-      margin: 0 0 6vw;
+      margin: 0 auto 4vw;
       opacity: 0;
       will-change: opacity;
       animation-name: opacityanimation;
@@ -35,6 +37,7 @@
     }
     &--Button {
       width: 48vw;
+      margin-left: 5%;
       text-decoration: none;
       transition: 0.3s;
       opacity: 0;
@@ -47,7 +50,7 @@
       @include buttons;
       &:hover {
         text-decoration: none;
-        background-color: $color-variacion3;
+        background-color: $color-variacion8;
       }
       & p {
         margin: 0 2vw 0 5vw;
@@ -114,7 +117,7 @@
   margin: 0;
   font-weight: 400;
   line-height: 100%;
-  font-size: 14vw;
+  font-size: 12vw;
   font-family: $Fuente1;
 }
 
@@ -129,6 +132,8 @@
 }
 
 .HomeHeroTitle-Line3 {
+  letter-spacing: 0.15vw;
+
   color: $color-variacion4;
 }
 
@@ -245,10 +250,10 @@
         animation-delay: 0.7s;
         transform: translateY(-100vw);
         will-change: transform;
-        z-index: 2;
         top: -35vw;
         left: 18vw;
         border: 1.2vw solid $color-claro;
+        z-index: 10;
       }
     }
     &__ImageContainer {
@@ -266,9 +271,15 @@
       animation-fill-mode: forwards;
       animation-delay: 1s;
       transform: translateX(-100vw);
+      overflow: hidden;
       &--Image {
         width: 102%;
         margin: -0.1vw 0 0;
+        transition: 0.5s;
+        will-change: transform;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
     &__SocialMedia {
@@ -292,15 +303,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2vw;
-        height: 2vw;
-        margin: 0.8vw 0;
+        width: 1vw;
+        height: 1vw;
+        margin: 1vw 0;
       }
     }
   }
 
+  .SocialMedia--Image.fb {
+    width: 1vw;
+    height: 1vw;
+  }
+
   .SocialMedia--Image {
     width: 100%;
+    transition: 0.3s;
+    will-change: filter;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(16%) sepia(12%)
+        saturate(3850%) hue-rotate(149deg) brightness(95%) contrast(91%);
+    }
   }
 
   .HomeHeroTitle {

@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import BlueLogo from "../../assets/logo-blue.png";
-import Wsp from "../../assets/redes-wsp-blue.png";
-import Ig from "../../assets/redes-ig-blue.png";
-import Fb from "../../assets/redes-fb-blue.png";
+import BlueLogo from "../../assets/logo-blue.svg";
+import Wsp from "../../assets/redes-wsp-blue.svg";
+import Ig from "../../assets/redes-ig-blue.svg";
+import Fb from "../../assets/redes-fb-blue.svg";
 
 export default function Footer() {
   return (
@@ -16,7 +16,7 @@ export default function Footer() {
           <ul className="FooterMenu__List">
             <li className="FooterMenu__List--Links">
               <NavLink
-                style={{ textDecoration: "inherit", color: "#2a7d90" }}
+                style={{ textDecoration: "inherit" }}
                 className="FooterMenuOptions"
                 to={"/Equipo"}
               >
@@ -25,7 +25,7 @@ export default function Footer() {
             </li>
             <li className="FooterMenu__List--Links">
               <NavLink
-                style={{ textDecoration: "inherit", color: "#2a7d90" }}
+                style={{ textDecoration: "inherit" }}
                 className="FooterMenuOptions"
                 to={"/Proyectos"}
               >
@@ -34,7 +34,7 @@ export default function Footer() {
             </li>
             <li className="FooterMenu__List--Links">
               <NavLink
-                style={{ textDecoration: "inherit", color: "#2a7d90" }}
+                style={{ textDecoration: "inherit" }}
                 className="FooterMenuOptions"
                 to={"/Packs"}
               >
@@ -43,7 +43,7 @@ export default function Footer() {
             </li>
             <li className="FooterMenu__List--Links">
               <NavLink
-                style={{ textDecoration: "inherit", color: "#2a7d90" }}
+                style={{ textDecoration: "inherit" }}
                 className="FooterMenuOptions"
                 to={"/Contacto"}
               >
@@ -54,8 +54,9 @@ export default function Footer() {
         </nav>
         <div className="FooterSocialMedia">
           <a
-            href="www.instagram.com"
+            href="https://www.instagram.com/tuespacio/"
             target="_blank"
+            rel="noreferrer"
             className="FooterSocialMedia__Links"
           >
             <img
@@ -65,19 +66,21 @@ export default function Footer() {
             ></img>
           </a>
           <a
-            href="www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=100078257949083&mibextid=LQQJ4d"
             target="_blank"
+            rel="noreferrer"
             className="FooterSocialMedia__Links"
           >
             <img
               src={Fb}
               alt="Facebook"
-              className="FooterSocialMedia__Links--Image"
+              className="FooterSocialMedia__Links--Image fb"
             ></img>
           </a>
           <a
-            href="www.whatsapp.com"
+            href="https://wa.me/5493813435833"
             target="_blank"
+            rel="noreferrer"
             className="FooterSocialMedia__Links"
           >
             <img

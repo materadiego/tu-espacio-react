@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ContactBg from "../../assets/form.webp";
 import Loader from "../../assets/loader.svg";
+import Arrow from "../../assets/arrow-down.png";
 
 export default function Contact() {
   const [response, setResponse] = useState("");
@@ -128,7 +129,7 @@ export default function Contact() {
             maxLength={2000}
           ></textarea>
           <button type="submit" className="Contact--Submit">
-            Enviar
+            Enviar <img src={Arrow} alt="arrow" />
           </button>
           <div className="ContactResponseContainer">{response}</div>
         </form>

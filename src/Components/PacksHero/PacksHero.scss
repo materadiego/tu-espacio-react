@@ -53,7 +53,7 @@
   &__Subtitle {
     width: 100%;
     letter-spacing: 0.3vw;
-    background-color: rgba(230, 255, 255, 0.3);
+    background-color: rgba(170, 200, 200, 0.3);
     text-align: center;
     font-size: 6vw;
     opacity: 0;
@@ -116,9 +116,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2vw;
-        height: 2vw;
-        margin: 0.8vw 0;
+        width: 1vw;
+        height: 1vw;
+        margin: 1vw 0;
       }
     }
     &__Title {
@@ -129,7 +129,12 @@
     &__Subtitle {
       letter-spacing: 0.25vw;
       font-size: 2vw;
-      border: 0.2vw solid $color-claro;
+      border: 0.13vw solid $color-claro;
     }
+  }
+
+  .SocialMedia--Image.fb {
+    width: 1vw;
+    height: 1vw;
   }
 }

@@ -29,10 +29,10 @@ export default function PacksPack2(scrollFunction) {
         ></img>
         <div className="PacksTitleContainer__Line"></div>
 
-        <p className="PacksTitleContainer__Text PacksTextRight  animate AnimatedOpacity">
-          Por medio de 2 videollamadas co-creamos tu{" "}
-          <span className="Color-Brown "> proyecto a medida</span> para que lo
-          ejecutes vos mismo sin gastar tiempo ni dinero extra.
+        <p className="PacksTitleContainer__Text PacksTextRight PacksText2  animate AnimatedOpacity">
+          Por medio de 2 videollamadas co-creamos tu proyecto{" "}
+          <span className="Color-Brown ">a medida</span> para que lo ejecutes
+          vos mismo sin gastar tiempo ni dinero extra.
         </p>
       </div>
       {/* INCLUDED */}

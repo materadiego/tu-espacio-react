@@ -1,4 +1,3 @@
-import YourHouseImage from "../../assets/home-yourhouse.webp";
 import scrollFunction from "../../utils/animation-scroll-function";
 
 export default function HomeYourHouse(scrollFunction) {
@@ -6,11 +5,8 @@ export default function HomeYourHouse(scrollFunction) {
     <div className="HomeYourHouse">
       <div className="HomeYourHouseContainer">
         <div className="HomeYourHouseContainer__ImageContainer animate AnimatedImageContainer1">
-          <img
-            src={YourHouseImage}
-            alt="BgImage"
-            className="HomeYourHouseContainer__ImageContainer--Image"
-          />
+          <div className="HomeYourHouseContainer__ImageContainer--Image"></div>
+
           <div className="HomeYourHouseContainer__ImageContainer--Square animate AnimatedSquare1"></div>
         </div>
         <div className="HomeYourHouseContainer__Content animate AnimatedContent1">

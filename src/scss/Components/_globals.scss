@@ -43,7 +43,7 @@ body {
     border-bottom: 0.6vw solid;
   }
   &__Icon {
-    width: 25vw;
+    width: 20vw;
   }
   &__Text {
     margin: 0 0 10vw 10vw;
@@ -80,6 +80,17 @@ body {
 
 .AnimatedOpacity {
   opacity: 0.15;
+}
+
+.Present-Container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 10vw 0;
+  &__Image {
+    width: 20vw;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -123,6 +134,11 @@ body {
       position: absolute;
       margin-top: 1.5vw;
       top: 0vw;
+      will-change: transform;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.15);
+      }
     }
     &__Text {
       margin: 3vw 0 0;
@@ -133,5 +149,16 @@ body {
 
   .PagePadding {
     height: 5.5vw;
+  }
+
+  .Present-Container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw 0 0;
+    &__Image {
+      width: 6vw;
+    }
   }
 }

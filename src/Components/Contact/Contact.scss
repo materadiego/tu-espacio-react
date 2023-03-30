@@ -17,7 +17,7 @@
     }
   }
   &__Content {
-    padding: 20vw 0;
+    padding: 20vw 0 0vw;
     margin-top: -12vw;
     background-color: $color-variacion1;
     &--Text {
@@ -40,7 +40,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 5vw auto;
+      margin: 5vw auto 0;
       & label {
         width: 100%;
         margin: 0;
@@ -88,7 +88,7 @@
 }
 
 .Contact--Submit {
-  width: 36vw;
+  width: 45vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,6 +98,9 @@
   font-family: $Fuente3;
   background-color: $color-claro;
   @include buttons;
+  & img {
+    display: none;
+  }
 }
 
 .ContactResponseContainer {
@@ -132,8 +135,16 @@
     width: 100%;
     &__ImageContainer {
       width: 55%;
+      overflow: hidden;
+      &:hover .Contact__ImageContainer--Image {
+        transform: scale(1.1);
+      }
       &--Square {
         border: 1vw solid $color-claro;
+      }
+      &--Image {
+        will-change: transform;
+        transition: 0.5s;
       }
     }
     &__Content {
@@ -240,6 +251,26 @@
     width: 8vw;
     font-size: 1vw;
     margin: 2vw auto 1vw;
+    will-change: background-color color;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-variacion8;
+      color: $color-claro;
+    }
+    &:hover img {
+      opacity: 1;
+      margin-left: 5vw;
+    }
+    & img {
+      transform: rotateZ(270deg);
+      width: 1.5vw;
+      margin-left: 3.5vw;
+      opacity: 0;
+      transition: 0.3s;
+      position: absolute;
+      will-change: opacity margin;
+    }
   }
 
   .ContactResponseContainer {

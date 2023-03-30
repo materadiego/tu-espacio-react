@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PresentIcon from "../../assets/home-packs.png";
+import PresentIcon from "../../assets/home-packs.svg";
 import scrollFunction from "../../utils/animation-scroll-function";
 
 export default function HomePacks(scrollFunction) {

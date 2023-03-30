@@ -1,8 +1,8 @@
-import BoxCheck from "../../assets/packs-checkpackbox.png";
+import BoxCheck from "../../assets/packs-checkpackbox.svg";
 import BoxPresent from "../../assets/packs-presenticon.png";
-import CheckPack1 from "../../assets/packs-checkpack1.png";
-import CheckPack2 from "../../assets/packs-checkpack2.png";
-import CheckPack3 from "../../assets/packs-checkpack3.png";
+import CheckPack1 from "../../assets/packs-checkpack1.svg";
+import CheckPack2 from "../../assets/packs-checkpack2.svg";
+import CheckPack3 from "../../assets/packs-checkpack3.svg";
 import PacksArrowDown from "../../assets/arrow-down-g.png";
 import scrollFunction from "../../utils/animation-scroll-function";
 

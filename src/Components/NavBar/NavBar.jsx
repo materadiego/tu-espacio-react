@@ -2,11 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
-import MenuClose from "../../assets/menu-close.png";
-import BlueLogo from "../../assets/logo.png";
-import Wsp from "../../assets/redes-wsp.png";
-import Ig from "../../assets/redes-ig.png";
-import Fb from "../../assets/redes-fb.png";
+import BlueLogo from "../../assets/logo.svg";
+import Wsp from "../../assets/redes-wsp.svg";
+import Ig from "../../assets/redes-ig.svg";
+import Fb from "../../assets/redes-fb.svg";
 
 export default function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -32,19 +31,25 @@ export default function NavBar() {
             className="HeaderContainer__Logo--Image"
           ></img>
         </Link>
-        <div className="HeaderContainer__MenuButton" onClick={toggleMenu}>
-          <div className="HeaderContainer__MenuButton--Line MenuLine1"></div>
-          <div className="HeaderContainer__MenuButton--Line MenuLine2"></div>
+        <div
+          className={`HeaderContainer__MenuButton ${
+            menu ? "MenuButtonFixed" : ""
+          }`}
+          onClick={toggleMenu}
+        >
+          <div
+            className={`HeaderContainer__MenuButton--Line MenuLine1 ${
+              menu ? "MenuLine1__Active" : ""
+            }`}
+          ></div>
+          <div
+            className={`HeaderContainer__MenuButton--Line MenuLine2 ${
+              menu ? "MenuLine2__Active" : ""
+            }`}
+          ></div>
         </div>
         {/* MENU */}
         <div className={`MenuContainer ${menu ? "MenuIsActive" : ""}`}>
-          <div className="MenuClose" onClick={toggleMenu}>
-            <img
-              src={MenuClose}
-              alt="Close-Menu"
-              className="MenuClose__Image"
-            ></img>
-          </div>
           <img className="Menu-Logo" src={BlueLogo} alt="Logo"></img>
           <nav className="Menu">
             <ul className="Menu__List">
@@ -103,36 +108,39 @@ export default function NavBar() {
           </nav>
           <div className="SocialMedia">
             <a
-              href="www.instagram.com"
+              href="https://www.instagram.com/tuespacio/"
               target="_blank"
+              rel="noreferrer"
               className="SocialMedia__Links"
             >
               <img
                 src={Ig}
                 alt="Instagram"
-                className="SocialMedia__Links--Image"
+                className="SocialMedia__Links--Image ig"
               ></img>
             </a>
             <a
-              href="www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=100078257949083&mibextid=LQQJ4d"
               target="_blank"
+              rel="noreferrer"
               className="SocialMedia__Links"
             >
               <img
                 src={Fb}
                 alt="Facebook"
-                className="SocialMedia__Links--Image"
+                className="SocialMedia__Links--Image fb"
               ></img>
             </a>
             <a
-              href="www.whatsapp.com"
+              href="https://wa.me/5493813435833"
               target="_blank"
+              rel="noreferrer"
               className="SocialMedia__Links"
             >
               <img
                 src={Wsp}
                 alt="Whatsapp"
-                className="SocialMedia__Links--Image"
+                className="SocialMedia__Links--Image wsp"
               ></img>
             </a>
           </div>

@@ -6,7 +6,6 @@
   padding-bottom: 12vw;
   position: absolute;
   bottom: 0;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .FooterContainer {
@@ -35,7 +34,12 @@
 }
 
 .FooterMenuOptions {
+  transition: 0.3s;
+  will-change: color;
   color: $color-variacion7;
+  &:hover {
+    color: $color-variacion8;
+  }
 }
 
 .FooterSocialMedia {
@@ -48,13 +52,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12vw;
-    height: 12vw;
-    margin: 0 3vw;
+    width: 8vw;
+    height: 8vw;
+    margin: 0 5vw;
     &--Image {
       width: 100%;
     }
   }
+}
+
+.FooterSocialMedia__Links--Image.fb {
+  width: 7vw;
+  height: 7vw;
 }
 
 .Footer-Logo {
@@ -95,13 +104,24 @@
 
     margin: 0;
     &__Links {
-      width: 2vw;
-      height: 2vw;
+      width: 1.5vw;
+      height: 1.5vw;
       margin: 0 1vw;
       &--Image {
         width: 100%;
+        transition: 0s;
+        will-change: filter;
+        &:hover {
+          filter: brightness(0) saturate(100%) invert(16%) sepia(12%)
+            saturate(3850%) hue-rotate(149deg) brightness(95%) contrast(91%);
+        }
       }
     }
+  }
+
+  .FooterSocialMedia__Links--Image.fb {
+    width: 1.5vw;
+    height: 1.5vw;
   }
 
   .Footer-Logo {

@@ -34,7 +34,7 @@ export default function PacksPack3() {
         <p className="PacksTitleContainer__Text PacksTextLeft PacksText3  animate AnimatedOpacity">
           Por medio de videollamadas <br className="PacksMobile"></br>{" "}
           co-creamos tu proyecto a medida para que lo ejecutes vos mismo.
-          <span className="Color-Blue">
+          <span className="Color-Blue SpanPack3">
             Es una ida y vuelta con el cliente, en el cual se tiene en cuenta
             cada detalle.
           </span>
@@ -42,26 +42,31 @@ export default function PacksPack3() {
       </div>
       {/* INCLUDED */}
       <p className="PacksIncludes Bg-Blue">¿QUÉ INCLUYE?</p>
-      <div className="PacksDescriptions  animate AnimatedOpacity">
-        <p className="PacksDescriptions__Text  PackDescriptions--Check3">
-          Plano de distribución.
-        </p>
-        <p className="PacksDescriptions__Text  PackDescriptions--Check3">
-          Plano de mobiliarios a medida.
-        </p>
-        <p className="PacksDescriptions__Text  PackDescriptions--Check3">
-          Links de proveedores.
-        </p>
-        <p className="PacksDescriptions__Text  PackDescriptions--Check3">
-          Detalles de terminaciones como pintura, materiales, pisos,
-          revestimientos.
-        </p>
-        <p className="PacksDescriptions__Text  PackDescriptions--Check3">
-          Imágenes realistas de la propuesta.
-        </p>
-        <p className="PacksDescriptions__Text  PackDescriptions--Check3">
-          Especificaciones técnicas y detalles.
-        </p>
+      <div className="PacksDescriptions Pack3-Descriptions  animate AnimatedOpacity">
+        <div className="Pack3-Subcontainer">
+          <p className="PacksDescriptions__Text  PackDescriptions--Check3">
+            Plano de distribución.
+          </p>
+          <p className="PacksDescriptions__Text  PackDescriptions--Check3">
+            Plano de mobiliarios a medida.
+          </p>
+          <p className="PacksDescriptions__Text  PackDescriptions--Check3">
+            Links de proveedores.
+          </p>
+          <p className="PacksDescriptions__Text  PackDescriptions--Check3">
+            Imágenes realistas de la propuesta.
+          </p>
+        </div>
+        <div className="Pack3-Subcontainer">
+          <p className="PacksDescriptions__Text  PackDescriptions--Check3">
+            Detalles de terminaciones como pintura, materiales, pisos,
+            revestimientos.
+          </p>
+
+          <p className="PacksDescriptions__Text  PackDescriptions--Check3">
+            Especificaciones técnicas y detalles.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -59,7 +59,7 @@
       font-size: 4.5vw;
       text-align: center;
       font-family: $Fuente3;
-      color: $color-secundario;
+      color: $color-variacion1;
     }
     &--Title {
       margin: 0 0 2vw;
@@ -240,6 +240,11 @@
       width: 50%;
       margin: 0.5vw auto 1.5vw;
       cursor: pointer;
+      transition: 0.3s;
+      will-change: background-color;
+      &:hover {
+        background-color: $color-variacion8;
+      }
     }
   }
 
