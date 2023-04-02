@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tu-espacio-react/static/css/main.65c70fe4.css",
-    "main.js": "/tu-espacio-react/static/js/main.bfb17212.js",
+    "main.css": "/tu-espacio-react/static/css/main.e425a721.css",
+    "main.js": "/tu-espacio-react/static/js/main.9e177894.js",
     "static/js/305.d110884d.chunk.js": "/tu-espacio-react/static/js/305.d110884d.chunk.js",
-    "static/css/783.555386e3.chunk.css": "/tu-espacio-react/static/css/783.555386e3.chunk.css",
+    "static/css/783.688f9943.chunk.css": "/tu-espacio-react/static/css/783.688f9943.chunk.css",
     "static/js/783.5538e240.chunk.js": "/tu-espacio-react/static/js/783.5538e240.chunk.js",
     "static/js/125.4cbf217b.chunk.js": "/tu-espacio-react/static/js/125.4cbf217b.chunk.js",
     "static/js/896.3412edb2.chunk.js": "/tu-espacio-react/static/js/896.3412edb2.chunk.js",
     "static/js/666.24e22c9a.chunk.js": "/tu-espacio-react/static/js/666.24e22c9a.chunk.js",
-    "static/css/335.d11e40a3.chunk.css": "/tu-espacio-react/static/css/335.d11e40a3.chunk.css",
-    "static/js/335.e05692de.chunk.js": "/tu-espacio-react/static/js/335.e05692de.chunk.js",
+    "static/css/335.a8a1954c.chunk.css": "/tu-espacio-react/static/css/335.a8a1954c.chunk.css",
+    "static/js/335.3d04a62d.chunk.js": "/tu-espacio-react/static/js/335.3d04a62d.chunk.js",
     "static/js/787.74c3be75.chunk.js": "/tu-espacio-react/static/js/787.74c3be75.chunk.js",
-    "static/css/395.ed228475.chunk.css": "/tu-espacio-react/static/css/395.ed228475.chunk.css",
+    "static/css/395.57340b83.chunk.css": "/tu-espacio-react/static/css/395.57340b83.chunk.css",
     "static/media/home-hero.webp": "/tu-espacio-react/static/media/home-hero.6ca989ecd82f4af92ef2.webp",
     "static/media/popup-bg-mobile.webp": "/tu-espacio-react/static/media/popup-bg-mobile.a98ba0fce4b90dc08816.webp",
     "static/media/packs-hero.webp": "/tu-espacio-react/static/media/packs-hero.787fa588314218804de5.webp",
@@ -47,21 +47,21 @@
     "static/media/loader.svg": "/tu-espacio-react/static/media/loader.ce90b98ef676f6605733ba07f5cd9c5e.svg",
     "static/media/redes-fb-blue.svg": "/tu-espacio-react/static/media/redes-fb-blue.b568eb92134e7a1afc79fb846a6a5da7.svg",
     "static/media/redes-fb.svg": "/tu-espacio-react/static/media/redes-fb.5df23a790814fcbdfd19a8585a4f25a6.svg",
-    "main.65c70fe4.css.map": "/tu-espacio-react/static/css/main.65c70fe4.css.map",
-    "main.bfb17212.js.map": "/tu-espacio-react/static/js/main.bfb17212.js.map",
+    "main.e425a721.css.map": "/tu-espacio-react/static/css/main.e425a721.css.map",
+    "main.9e177894.js.map": "/tu-espacio-react/static/js/main.9e177894.js.map",
     "305.d110884d.chunk.js.map": "/tu-espacio-react/static/js/305.d110884d.chunk.js.map",
-    "783.555386e3.chunk.css.map": "/tu-espacio-react/static/css/783.555386e3.chunk.css.map",
+    "783.688f9943.chunk.css.map": "/tu-espacio-react/static/css/783.688f9943.chunk.css.map",
     "783.5538e240.chunk.js.map": "/tu-espacio-react/static/js/783.5538e240.chunk.js.map",
     "125.4cbf217b.chunk.js.map": "/tu-espacio-react/static/js/125.4cbf217b.chunk.js.map",
     "896.3412edb2.chunk.js.map": "/tu-espacio-react/static/js/896.3412edb2.chunk.js.map",
     "666.24e22c9a.chunk.js.map": "/tu-espacio-react/static/js/666.24e22c9a.chunk.js.map",
-    "335.d11e40a3.chunk.css.map": "/tu-espacio-react/static/css/335.d11e40a3.chunk.css.map",
-    "335.e05692de.chunk.js.map": "/tu-espacio-react/static/js/335.e05692de.chunk.js.map",
+    "335.a8a1954c.chunk.css.map": "/tu-espacio-react/static/css/335.a8a1954c.chunk.css.map",
+    "335.3d04a62d.chunk.js.map": "/tu-espacio-react/static/js/335.3d04a62d.chunk.js.map",
     "787.74c3be75.chunk.js.map": "/tu-espacio-react/static/js/787.74c3be75.chunk.js.map",
-    "395.ed228475.chunk.css.map": "/tu-espacio-react/static/css/395.ed228475.chunk.css.map"
+    "395.57340b83.chunk.css.map": "/tu-espacio-react/static/css/395.57340b83.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.65c70fe4.css",
-    "static/js/main.bfb17212.js"
+    "static/css/main.e425a721.css",
+    "static/js/main.9e177894.js"
   ]
 }
