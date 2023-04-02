@@ -223,11 +223,32 @@
         animation-duration: 0.1s;
         animation-fill-mode: forwards;
         animation-delay: 1.6s;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         & p {
-          margin: 0 0.5vw 0 1vw;
+          transition: 0.3s;
+          margin: 0;
+
+          will-change: margin;
         }
         & img {
           width: 1.5vw;
+          transition: 0.3s;
+          right: 0.8vw;
+          opacity: 0;
+          transform: translateY(-0.4vw);
+
+          will-change: transform opacity;
+          position: absolute;
+        }
+        &:hover img {
+          transform: translateY(0vw);
+          opacity: 1;
+        }
+        &:hover p {
+          margin: 0 0 0 -1.5vw;
         }
       }
     }

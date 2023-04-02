@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
 import PopUp from "./Components/PopUp/PopUp";
-
+import ScrollToTop from "./utils/ScrollToTop";
 import "./scss/Styles.scss";
 
 const LazyHomePage = React.lazy(() => import("./Pages/HomePage"));
@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar />
         <PopUp />
         <Routes>

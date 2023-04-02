@@ -56,27 +56,27 @@
     padding: 8vw 0 4vw;
   }
 
-  .HomePacksContainer {
+  .AngledBoxContainer.HomePacksContainer {
     padding: 5vw 0;
   }
 
-  .HomePacksIcon {
+  .AngledBoxContainer__Icon.HomePacksIcon {
     margin: 1.5vw 0 0 -9.5vw;
     width: 4.2vw;
   }
 
-  .AngledBoxBrownLine {
+  .AngledBoxContainer__Line.AngledBoxBrownLine {
     position: relative;
     left: auto;
   }
 
-  .HomePacksTitle {
+  .AngledBoxContainer__Title.HomePacksTitle {
     margin-top: -3vw;
     position: relative;
     right: auto;
   }
 
-  .HomePacksText {
+  .AngledBoxContainer__Text.HomePacksText {
     margin-left: 0vw;
     width: 16vw;
     font-size: 1.1vw;

@@ -16,7 +16,7 @@ export default function GuideCaledlyContent() {
           <p className="ThanksContainer__Content--Title">¡MUCHAS GRACIAS!</p>
           <a
             href="Ebook-Tu-espacio.pdf"
-            download="Ebook-Tu-espacio.pdf"
+            download="%PUBLIC_URL%/Ebook-Tu-espacio.pdf"
             className="ThanksContainer__Content--Download"
             style={{ textDecoration: "inherit" }}
           >
