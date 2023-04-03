@@ -24,7 +24,7 @@ function App() {
         <PopUp />
         <Routes>
           <Route
-            path="/tu-espacio-react"
+            path="/"
             element={
               <Suspense>
                 <LazyHomePage />
