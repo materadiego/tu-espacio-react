@@ -55,7 +55,7 @@ export default function HomeHero() {
             <img src={Fb} alt="" className="SocialMedia--Image fb"></img>
           </a>
           <a
-            href="https://wa.me/5493813435833"
+            href="https://wa.me/5493815740966"
             target={"_blank"}
             rel="noreferrer"
             className="HomeHeroContainer__SocialMedia--Link"

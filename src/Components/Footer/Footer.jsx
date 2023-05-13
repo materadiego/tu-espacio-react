@@ -78,7 +78,7 @@ export default function Footer() {
             ></img>
           </a>
           <a
-            href="https://wa.me/5493813435833"
+            href="https://wa.me/5493815740966"
             target="_blank"
             rel="noreferrer"
             className="FooterSocialMedia__Links"

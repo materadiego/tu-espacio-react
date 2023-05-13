@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 10;
   top: 0;
-  padding-top: 10vw;
+  padding-top: 5vw;
   width: 100%;
   height: 100vh;
   overflow: auto;
@@ -51,21 +51,22 @@
   }
   &__Content {
     width: 90%;
-    margin: -5vw auto 0;
+    margin: -6vw auto 0;
     background-color: $color-claro;
     &--Pretitle {
       padding: 3vw 0 0;
       margin: 0;
-      font-size: 4.5vw;
+      font-size: 4vw;
       text-align: center;
       font-family: $Fuente3;
       color: $color-variacion1;
     }
     &--Title {
-      margin: 0 0 2vw;
-      letter-spacing: 0.5vw;
-      line-height: 130%;
-      font-size: 6.9vw;
+      width: 80%;
+      margin: 0 auto 2vw;
+      letter-spacing: 0.2vw;
+      line-height: 120%;
+      font-size: 6vw;
       text-align: center;
       font-family: $Fuente1;
       color: $color-variacion7;
@@ -182,7 +183,7 @@
         margin: 0 0 1vw;
         line-height: 120%;
         letter-spacing: 0.15vw;
-        font-size: 1.77vw;
+        font-size: 1.7vw;
         text-align: start;
       }
       &--Text {

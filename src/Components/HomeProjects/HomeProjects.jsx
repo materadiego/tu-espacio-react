@@ -3,7 +3,7 @@ import scrollFunction from "../../utils/animation-scroll-function";
 
 export default function HomeProjects(scrollFunction) {
   return (
-    <div className="HomeProjects">
+    <div className="HomeProjects" id="Proyectos">
       <div className="HomeProjectsContainer">
         <div className="HomeProjectsContainer__Subcontainer animate ProjectsOpacity">
           <div className="HomeProjectsContainer__Subcontainer--Title">

@@ -68,7 +68,7 @@ export default function PopUp() {
         <div className="PopUpContainer__Content">
           <p className="PopUpContainer__Content--Pretitle">¡GUIA GRATUITA!</p>
           <p className="PopUpContainer__Content--Title">
-            5 ERRORES FATALES DECORANDO EL HOGAR
+            3 ERRORES FATALES DECORANDO EL HOGAR Y COMO EVITARLOS
           </p>
           <p className="PopUpContainer__Content--Text">
             Completá tus datos para descargar la guia:

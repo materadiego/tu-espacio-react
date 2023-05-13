@@ -20,37 +20,32 @@ export default function Contact() {
     });
   };
 
-  const enviarDatos = (event) => {
+  const enviarDatos = async (event) => {
     event.preventDefault();
+    setResponse(
+      <img
+        alt="loader"
+        className="ContactResponseContainer__Loader"
+        src={Loader}
+      ></img>
+    );
+    const res = await fetch(
+      "https://formsubmit.co/ajax/info@disenatuespacio.com",
+      {
+        method: "post",
+        body: new FormData(event.target),
+      }
+    );
+    const data = await res.json();
+    console.log(data);
 
-    fetch("https://formsubmit.co/ajax/info@disenatuespacio.com", {
-      method: "post",
-      body: new FormData(event.target),
-    })
-      .then((res) =>
-        res.ok
-          ? setResponse("¡Mensaje enviado exitosamente!")
-          : Promise.reject(res)
-      )
-      .catch(
-        (error) => console.log(error),
-        setResponse(
-          <img
-            alt="loader"
-            className="ContactResponseContainer__Loader"
-            src={Loader}
-          ></img>
-        )
-      )
-      .finally(() => {
-        setDatos({
-          Name: "",
-          Surname: "",
-          Phone: "",
-          Mail: "",
-          Message: "",
-        });
-      });
+    console.log(res.status);
+
+    if (res.status !== 200) {
+      setResponse("Error. Intente nuevamente");
+    } else {
+      setResponse("¡Mensaje enviado exitosamente!");
+    }
   };
 
   return (
