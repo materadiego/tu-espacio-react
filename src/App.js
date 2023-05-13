@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
 import PopUp from "./Components/PopUp/PopUp";
@@ -18,7 +18,7 @@ const LazyGuideCalendlyPage = React.lazy(() =>
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <NavBar />
         <PopUp />
@@ -73,7 +73,7 @@ function App() {
           />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

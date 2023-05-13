@@ -2,6 +2,7 @@ import React from "react";
 import { InlineWidget } from "react-calendly";
 import ThanksIcon from "../../assets/gracias.png";
 import CalendarIcon from "../../assets/calendar.png";
+import Ebook from "../../assets/Ebook-Tu-espacio.pdf";
 
 export default function GuideCaledlyContent() {
   return (
@@ -16,7 +17,7 @@ export default function GuideCaledlyContent() {
           <p className="ThanksContainer__Content--Title">¡MUCHAS GRACIAS!</p>
           <a
             href="Ebook-Tu-espacio.pdf"
-            download="Ebook-Tu-espacio.pdf"
+            download={Ebook}
             className="ThanksContainer__Content--Download"
             style={{ textDecoration: "inherit" }}
           >
